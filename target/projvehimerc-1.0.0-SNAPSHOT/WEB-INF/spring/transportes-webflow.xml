@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:webflow="http://www.springframework.org/schema/webflow-config"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:faces="http://www.springframework.org/schema/faces"
+       xsi:schemaLocation="
+		http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+        http://www.springframework.org/schema/webflow-config
+        http://www.springframework.org/schema/webflow-config/spring-webflow-config-2.3.xsd
+        http://www.springframework.org/schema/faces
+        http://www.springframework.org/schema/faces/spring-faces-2.0.xsd 
+        http://www.springframework.org/schema/context 
+		http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+		
+	<bean class="org.springframework.webflow.scope.ScopeRegistrar"/>
+		
+	<!--Flow executor for Jpa integration and security  -->
+    <webflow:flow-executor id="flowExecutor">
+        <webflow:flow-execution-listeners>
+            <webflow:listener ref="securityFlowExecutionListener"/>
+            <webflow:listener ref="hibernateFlowExecutionListener"/>
+        </webflow:flow-execution-listeners>
+    </webflow:flow-executor>
+    
+    <!-- Flow register -->
+    <webflow:flow-registry flow-builder-services="facesFlowBuilderServices"
+                           id="flowRegistry" base-path="/WEB-INF/flows">  
+        <!-- <webflow:flow-location path="/welcome/welcome.xml"/> -->
+        	 <webflow:flow-location-pattern value="/**/*-flow.xml"/>
+       <!--  <webflow:flow-location path="/inscripcion/inscripcion-flow.xml"/> -->
+    </webflow:flow-registry>
+    
+    <faces:flow-builder-services id="facesFlowBuilderServices"
+                                 enable-managed-beans="true" development="true"/>
+    
+    <!-- For use interface flow controller -->
+    <bean
+            class="org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter"/>
+            
+    <bean class="org.springframework.webflow.mvc.servlet.FlowHandlerAdapter">
+        <property name="flowExecutor" ref="flowExecutor"/>
+        <!--  need to tell Spring Web Flow about how to handle Ajax requests. -->
+        <property name="ajaxHandler">
+			<bean class="org.springframework.faces.richfaces.RichFacesAjaxHandler" />
+		</property>
+    </bean>
+
+    <bean class="org.springframework.webflow.mvc.servlet.FlowHandlerMapping">
+        <property name="flowRegistry" ref="flowRegistry"/>
+         <property name="defaultHandler">
+            <bean class="org.springframework.web.servlet.mvc.UrlFilenameViewController"/>
+        </property>
+    </bean>
+
+    <!--  LISTENER'S for SECURITY and JPA-->
+    <bean id="securityFlowExecutionListener"
+          class="org.springframework.webflow.security.SecurityFlowExecutionListener"/>
+
+    <bean id="hibernateFlowExecutionListener"
+          class="org.springframework.webflow.persistence.HibernateFlowExecutionListener">
+       <!-- <constructor-arg ref="entityManagerFactory"/>-->
+     	<constructor-arg ref="sessionFactory"/>
+        <constructor-arg ref="transactionManager"/>
+    </bean>
+
+	<!-- Facelets config -->
+    <bean id="faceletsViewResolver"
+          class="org.springframework.web.servlet.view.UrlBasedViewResolver">
+        <property name="viewClass" value="org.springframework.faces.mvc.JsfView"/>
+        <property name="prefix" value="/WEB-INF/flows/"/>
+        <property name="suffix" value=".xhtml"/>
+    </bean>
+
+
+</beans>

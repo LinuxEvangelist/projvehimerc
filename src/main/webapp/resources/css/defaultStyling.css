@@ -1,0 +1,101 @@
+@CHARSET "UTF-8";
+body{font: 12px "Lucida Sans Unicode", "Lucida Grande", sans-serif;margin:0px;padding:0px;}
+#wrapper {
+background: #F3F3F3 url(../../resources/img/default/bg.png) repeat-x 0 0;
+padding-top: 3px;
+position: relative;
+overflow: hidden;
+}
+#maincontent-wrapper {
+margin: 0 10px;
+}
+#site-info {
+clear: both;
+overflow: hidden;
+height: 1%;
+margin: 0 auto;
+text-align: center;
+}
+#wrapper-3 {
+float: left;
+display: inline;
+margin: 0px;
+width: 700px;
+width: 100%;
+-webkit-border-radius: 4px;
+-moz-border-radius: 4px;
+border-radius: 4px;
+line-height: 1.5;
+background-color: white;
+}
+#top_subnav_branding {
+position: relative;
+margin: 0 auto 0px auto;
+box-shadow: 3px 3px 3px #CCC;
+background-color: #BCBCBC;
+-webkit-border-top-left-radius: 5px;
+-webkit-border-top-right-radius: 5px;
+-moz-border-radius: 5px 5px 0 0;
+border-radius: 5px 5px 0 0;
+}
+div#top_subnav_branding{
+	display: block;
+	
+}
+#wrapper-2 {
+background: #A8A8A8 url(../../resources/img/default/wrapper2.png) repeat-x 0 0;
+margin: 0px auto 0;
+position: relative;
+z-index: 1;
+padding-bottom: 5px 1180px;
+}
+
+#top_subnav_branding #heading{column="1";no-repeat scroll top right transparent;
+height: 110px;
+-webkit-border-top-left-radius: 4px;
+-webkit-border-top-right-radius: 4px;
+-moz-border-radius: 4px 4px 0px 0px;
+border-radius: 4px 4px 0px 0px;}
+#sidebarleft{style="float:left;height : 193px; width : 101px; vertical-align:top;}
+/* .sidebarleft td{vertical-align: top;} */
+
+#content{style="float:right;height : 193px; width : 689px;}
+
+#heading {
+overflow: hidden;
+}
+
+#wrap-content {
+background-color: white;
+padding: 0px;
+margin: 0 5px 0px;
+-webkit-border-bottom-left-radius: 4px;
+-webkit-border-bottom-right-radius: 4px;
+-moz-border-radius: 0px 0px 4px 4px;
+border-radius: 0px 0px 4px 4px;
+}
+#projsubnav_footer {
+margin: 0px;
+font-weight: bold;
+display: block;
+font-family: "Lucida Sans", "Lucida Sans Unicode", "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+font-size: 12px;
+height: 100%;
+max-width: 1180px;
+min-width: 768px;
+text-align: left;}
+
+#clearfix {
+clear: both;
+font-size: 1px;
+height: 0;
+overflow: hidden;
+width: 100%;
+}
+
+#leftcolumn {
+float: left;
+margin-left: -300px;
+ no-repeat scroll right top #EFEFEF;
+ vertical-align:top;
+}

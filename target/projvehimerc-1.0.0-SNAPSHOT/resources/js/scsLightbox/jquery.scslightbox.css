@@ -1,0 +1,84 @@
+.scslbShadow
+{
+	overflow:auto;
+	top: 0px;
+	left: 0px;
+	z-index: 90;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background: url(images/shadow.png) repeat;
+}
+
+.scslbBox
+{
+	top: 0px;
+	left: 50%;
+	background: white;
+	position: absolute;
+	z-index: 91;
+}
+
+.scslbBox .previous
+{
+	background: transparent url(images/prev.gif);
+	width: 63px;
+	height: 32px;
+	cursor: pointer;
+	z-index: 999;
+	position: absolute;
+	left: 0px;
+	top: 20px;
+	display: none;
+}
+
+.scslbBox .next
+{
+	background: transparent url(images/next.gif);
+	width: 63px;
+	height: 32px;
+	cursor: pointer;
+	margin-left: -63px;
+	z-index: 999;
+	position: absolute;
+	left: 100%;
+	top: 20px;
+	display: none;
+}
+
+.scslbBox .close
+{
+	background: transparent url(images/close.png);
+	width: 25px;
+	height: 25px;
+	margin-top: -12px;
+	margin-left: -12px;
+	cursor: pointer;
+	z-index: 999;
+	position: absolute;
+	left: 100%;
+	display: none;
+}
+
+.scslbBox .loaderContainer
+{
+	padding: 20px;
+}
+
+.scslbBox .loader
+{
+	width: 41px;
+	height: 39px;
+	background: transparent url(images/loader.gif) no-repeat;
+	margin: 0 auto;
+}
+
+.scslbBox .boxContent
+{
+	padding: 6px;
+}
+
+.scslbBox .boxFooter
+{
+	display: none;
+}

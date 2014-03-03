@@ -1,0 +1,40 @@
+.wrapper{
+display:block;margin:0px auto;width:974px;color:#fff;
+}
+
+.logo-header{
+float:left; width:974px; height:50px; padding:20px 0px 0px 10px; color:#fff;
+}
+
+.logo-header .rf-p-hdr{
+float:left;display:block;width:133px;height:12px; color:#fff; 
+background: url(../../resources/images/oralogo_small.gif) no-repeat center; border-color:#fff;
+text-indent:-5000px;
+}
+
+/*.logo-link{
+float:left;display:block;width:133px;height:18px; 
+no-repeat center; 
+text-indent:-5000px;
+}
+*/
+
+.main-container{
+color:#fff;
+float:left; 
+width:974px; 
+height:auto;
+visibility: hidden;
+}
+
+.main-container .rf-p-hdr{
+float: left;
+background: url(../../resources/images/t-bg.gif) repeat-x;
+width: 974px;
+height: 50px;
+}
+
+
+.graybox-container{
+float:left; width:316px; height:auto;
+}

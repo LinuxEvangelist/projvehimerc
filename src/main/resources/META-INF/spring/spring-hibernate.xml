@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+                           http://www.springframework.org/schema/context
+                           http://www.springframework.org/schema/context/spring-context-3.1.xsd
+                           http://www.springframework.org/schema/tx
+                           http://www.springframework.org/schema/tx/spring-tx-3.1.xsd">
+
+<!-- Hibernate SessionFactory -->
+<!-- replace
+class="org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean"-->
+<bean class="org.springframework.orm.hibernate4.HibernateExceptionTranslator"/>
+<bean id="sessionFactory" 
+class="org.springframework.orm.hibernate4.LocalSessionFactoryBean"
+	p:dataSource-ref="vehicDataSource">
+	<!-- p:lobHandler-ref="defaultLobHandler"-->
+	<property name="annotatedClasses">
+		<list>
+		<!-- User Security -->
+		<value>com.reglamb.projvehimerc.domain.security.Users</value>
+		<value>com.reglamb.projvehimerc.domain.security.Authorities</value>
+		<!-- User -->
+		<value>com.reglamb.projvehimerc.domain.User</value>
+		<!-- Procedimientos -->
+		<value>com.reglamb.projvehimerc.domain.HabilitacionVehicular_Inscripcion</value>
+		<value>com.reglamb.projvehimerc.domain.HabilitacionVehicular_IncremtSusti</value>
+		<!-- Main Properties -->
+		<value>com.reglamb.projvehimerc.domain.Transportista</value>
+		<value>com.reglamb.projvehimerc.domain.Ubigeo_Transportista</value>
+		<value>com.reglamb.projvehimerc.domain.Ubigeo_Inei</value>
+		<value>com.reglamb.projvehimerc.domain.TransportistaNatural</value>
+		<value>com.reglamb.projvehimerc.domain.TransportistaJuridico</value>
+		<value>com.reglamb.projvehimerc.domain.Conductor</value>
+		<value>com.reglamb.projvehimerc.domain.Vehiculo</value>
+		<!-- Vehiculo 's Properties  -->
+		<value>com.reglamb.projvehimerc.domain.vehiculo.Vehiculo_Citv</value>
+		<value>com.reglamb.projvehimerc.domain.vehiculo.Vehiculo_Soat</value>
+		<value>com.reglamb.projvehimerc.domain.vehiculo.Vehiculo_Tenencia</value>
+		<!-- Transportista's Properties -->
+		<value>com.reglamb.projvehimerc.domain.transportista.Transportista_Accionista</value>
+		<value>com.reglamb.projvehimerc.domain.transportista.Transportista_Representante</value>
+		<value>com.reglamb.projvehimerc.domain.transportista.Transportista_Sucursal</value>
+		<!-- Transportista's Ubigeo -->
+		<value>com.reglamb.projvehimerc.domain.ubigeo.Departamento</value>
+		<value>com.reglamb.projvehimerc.domain.ubigeo.Distrito</value>
+		<value>com.reglamb.projvehimerc.domain.ubigeo.Provincia</value>
+		</list>
+	</property>
+   <!-- <property name="mappingResources"><list><value>com/reglamb/projvehi/domain/Solicitante.hbm.xml</value></list> </property>--> 
+   <!-- <property name="packagesToScan" value="org.adit.spring.hibernate.entity" />-->
+	<property name="hibernateProperties">
+            <value>
+                <!--hibernate.dialect=${hibernate.dialect}-->
+                hibernate.default_schema=${hibernate.default_schema}
+                hibernate.jdbc.batch_size=${hibernate.jdbc.batch_size}
+                <!--hibernate.c3p0.max_size=${hibernate.c3p0.max_size}-->
+                <!--hibernate.c3p0.min_size=${hibernate.c3p0.min_size}-->
+                <!--hibernate.c3p0.timeout=${hibernate.c3p0.timeout}-->
+                <!--hibernate.c3p0.max_statements=${hibernate.c3p0.max_statements}-->
+                <!--hibernate.c3p0.idle_test_period=${hibernate.c3p0.idle_test_period}-->
+                <!--hibernate.c3p0.acquire_increment=${hibernate.c3p0.acquire_increment}-->
+                <!--hibernate.c3p0.validate=${hibernate.c3p0.validate}-->
+                <!--hibernate.cache.provider_class=${hibernate.cache.provider_class}-->
+                <!--hibernate.connection.provider_class=${hibernate.connection.provider_class}-->
+                hibernate.show_sql=${hibernate.show_sql}
+                hibernate.hbm2ddl.auto=${hibernate.hbm2ddl.auto}
+                hibernate.id.new_generator_mappings=${hibernate.id.new_generator_mappings}
+                hibernate.hbm2ddl.import_files=${hibernate.hbm2ddl.import_files}
+                <!-- Auto Generated Schemas and tables not good for production
+                hibernate.hbm2ddl.auto=update-->
+                <!--hibernate.cache.use_second_level_cache=true-->
+                <!--hibernate.cache.use_query_cache=true-->
+             </value>
+        </property>
+</bean>
+ <!-- Database LOB Handling , down for Spring that will that use Hibernate 4 CLOB
+<bean id="defaultLobHandler" class="org.springframework.jdbc.support.lob.DefaultLobHandler"/>
+-->
+
+	 <!-- Transaction Config -->
+<bean id="transactionManager"
+          class="org.springframework.orm.hibernate4.HibernateTransactionManager"
+          p:sessionFactory-ref="sessionFactory"/>   
+<!--            
+<bean id="inscripcionhabilitacionvehicfacade" 
+	class="com.reglamb.projvehimerc.service.HabilitacionVehicular_InscripcionFacadeImpl" > 
+	<property name="transactionManager" ref ="transactionManager" />
+</bean>
+-->
+<!-- Hibernate Template -->
+ <bean id="hibernateTemplate" 
+ 	class="org.springframework.orm.hibernate3.HibernateTemplate" 
+ 	p:sessionFactory-ref ="sessionFactory"/>
+ 
+<!-- Injectores Procedimiento -->
+<bean id="userDao" 
+	class="com.reglamb.projvehimerc.dao.hibernate.UserDaoHibernate" > 
+	<property name="hibernateTemplate" ref ="hibernateTemplate" />
+</bean>
+<bean id="inscriptransportistaDao" 
+	class="com.reglamb.projvehimerc.dao.hibernate.HabilitacionVehicular_InscripcionDaoHibernate" > 
+	<property name="hibernateTemplate" ref ="hibernateTemplate" />
+</bean>
+<bean id="incrementsustitransportistaDao" 
+	class="com.reglamb.projvehimerc.dao.hibernate.HabilitacionVehicular_IncremtSustiDaoHibernate" > 
+	<property name="hibernateTemplate" ref ="hibernateTemplate" />
+</bean>
+
+<!-- Main Injectores --> 
+ <bean id="transportistaDao" 
+	class="com.reglamb.projvehimerc.dao.hibernate.TransportistaDaoHibernate" > 
+	<property name="hibernateTemplate" ref ="hibernateTemplate" />
+</bean>
+<bean id="transportistaNatuDao" 
+	class="com.reglamb.projvehimerc.dao.hibernate.TransportistaNatuDaoHibernate" > 
+	<property name="hibernateTemplate" ref ="hibernateTemplate" />
+</bean>
+<bean id="transportistaJuriDao" 
+	class="com.reglamb.projvehimerc.dao.hibernate.TransportistaJuridDaoHibernate" > 
+	<property name="hibernateTemplate" ref ="hibernateTemplate" />
+</bean>
+<bean id="conductorDao" 
+	class="com.reglamb.projvehimerc.dao.hibernate.ConductorDaoHibernate" > 
+	<property name="hibernateTemplate" ref ="hibernateTemplate" />
+</bean>
+
+<!-- Injectores de Vehiculo, HibernateTemplate -->
+<bean id="vehiculoDao" 
+	class="com.reglamb.projvehimerc.dao.hibernate.VehiculoDaoHibernate" > 
+	<property name="hibernateTemplate" ref ="hibernateTemplate" />
+</bean>
+<bean id="vehiculocitvDao" 
+	class="com.reglamb.projvehimerc.dao.hibernate.vehiculo.Vehiculo_CitvDaoHibernate" > 
+	<property name="hibernateTemplate" ref ="hibernateTemplate" />
+</bean>
+<bean id="vehiculosoatDao" 
+	class="com.reglamb.projvehimerc.dao.hibernate.vehiculo.Vehiculo_SoatDaoHibernate" > 
+	<property name="hibernateTemplate" ref ="hibernateTemplate" />
+</bean>
+<bean id="vehiculoteneciaDao" 
+	class="com.reglamb.projvehimerc.dao.hibernate.vehiculo.Vehiculo_TenenciaDaoHibernate" > 
+	<property name="hibernateTemplate" ref ="hibernateTemplate" />
+</bean>
+
+<!-- Injectores de Representante, HibernateTemplate -->
+<bean id="transrepresentanteDao" 
+	class="com.reglamb.projvehimerc.dao.hibernate.transportista.Transportista_RepresentanteDaoHibernate" > 
+	<property name="hibernateTemplate" ref ="hibernateTemplate" />
+</bean>
+<bean id="transsucursalDao" 
+	class="com.reglamb.projvehimerc.dao.hibernate.transportista.Transportista_SucursalDaoHibernate" > 
+	<property name="hibernateTemplate" ref ="hibernateTemplate" />
+</bean>
+<bean id="transaccionistaDao" 
+	class="com.reglamb.projvehimerc.dao.hibernate.transportista.Transportista_AccionistaDaoHibernate" > 
+	<property name="hibernateTemplate" ref ="hibernateTemplate" />
+</bean>
+
+<!-- Injectores Ubigeo -->
+<bean id="ubigeoTransDao" 
+	class="com.reglamb.projvehimerc.dao.hibernate.UbigeoDaoHibernate" > 
+	<property name="hibernateTemplate" ref ="hibernateTemplate" />
+</bean>
+<bean id="ubigeoIneiTransDao" 
+	class="com.reglamb.projvehimerc.dao.hibernate.UbigeoIneiDaoHibernate" > 
+	<property name="hibernateTemplate" ref ="hibernateTemplate" />
+</bean>
+<bean id="departamentoDao" 
+	class="com.reglamb.projvehimerc.dao.hibernate.ubigeo.DepartamentoDaoHibernate" > 
+	<property name="hibernateTemplate" ref ="hibernateTemplate" />
+</bean>
+<bean id="distritoDao" 
+	class="com.reglamb.projvehimerc.dao.hibernate.ubigeo.DistritoDaoHibernate" > 
+	<property name="hibernateTemplate" ref ="hibernateTemplate" />
+</bean>
+ 
+<bean id="provinciaDao"
+	class="com.reglamb.projvehimerc.dao.hibernate.ubigeo.ProvinciaDaoHibernate" > 
+	<property name="hibernateTemplate" ref ="hibernateTemplate" />
+</bean>
+
+<bean name="inscripcionHabilitacionVehicFacade" class="com.reglamb.projvehimerc.service.HabilitacionVehicular_InscripcionFacadeImpl" />
+<tx:annotation-driven transaction-manager="transactionManager"/> 
+</beans>

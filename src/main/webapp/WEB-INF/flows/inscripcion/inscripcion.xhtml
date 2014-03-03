@@ -1,0 +1,25 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<ui:composition template="/WEB-INF/flows/template/defaultMainLayout.xhtml"
+xmlns="http://www.w3.org/1999/xhtml"
+xmlns:ui="http://java.sun.com/jsf/facelets"
+xmlns:f="http://java.sun.com/jsf/core"
+xmlns:h="http://java.sun.com/jsf/html">
+<!-- 
+ <ui:define name="windowTitle">
+    #{msgs.loginTitle}
+ </ui:define>
+   -->
+ <ui:define name="main-wrapper">
+    <h:form>
+       <h:panelGrid columns="2">
+          #{msgs.namePrompt}
+          <h:inputText id="name" value="#{user.name}"/>
+          #{msgs.passwordPrompt}
+          <h:inputSecret id="password" value="#{user.password}"/>
+       </h:panelGrid>
+       <p>
+          <h:commandButton value="#{msgs.loginButtonText}"/>
+       </p>
+    </h:form>
+ </ui:define>
+</ui:composition>

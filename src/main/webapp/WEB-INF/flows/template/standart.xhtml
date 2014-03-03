@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html">
+
+<h:head>
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1, maximum-scale=1" />
+	<link
+		href="https://fonts.googleapis.com/css?family=Limelight|Flamenco|Federo|Yesteryear|Josefin Sans|Spinnaker|Sansita One|Handlee|Droid Sans|Oswald:400,300,700"
+		media="screen" rel="stylesheet" type="text/css" />
+	<h:outputStylesheet library="stylesheets" name="bootstrap.css" />
+	<h:outputStylesheet library="stylesheets"
+		name="bootstrap-responsive.css" />
+	<h:outputStylesheet library="stylesheets" name="common.css" />
+	<h:outputStylesheet library="stylesheets" name="fontawesome.css" />
+	<!-- <h:outputStylesheet library="stylesheets" name="project.css" /> -->
+	<h:outputStylesheet library="stylesheets" name="1.css" />
+
+	<!-- Typekit fonts require an account and a kit containing the fonts used. see https://typekit.com/plans for details. <script type="text/javascript" src="//use.typekit.net/YOUR_KIT_ID.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+-->
+	<title>Sistema de Inscripcion de Vehiculos de Mercancias</title>
+</h:head>
+
+<h:body>
+	<div id="page-wrapper">
+		<div id="absolute-wrapper">
+			<div id="banner"
+				class="rectangle rectangle-1 rectangle-2 rectangle-4">
+				<div id="back-img-banner" class="rectangle rectangle-2 rectangle-3"></div>
+				<ui:insert name="banner">
+					<ui:include src="/WEB-INF/flows/sections/mainLayout/banner.xhtml" />
+					<div id="tagline">&nbsp;</div>
+				</ui:insert>
+			</div>
+			<!-- <div class="rectangle rectangle-1 rectangle-2 rectangle-4">
+          <div class="rectangle rectangle-2 rectangle-3"></div>
+          <ul class="nav">
+            <li>
+              <a href="#">Inicio</a>
+            </li>
+          </ul>
+          <h1 class="heading">GOBIERNO REGIONAL DE LAMBAYEQUE</h1>
+        </div> -->
+			<div id="heading" class="image image-2">
+				<ui:insert name="heading">
+					<ui:include
+						src="/WEB-INF/flows/sections/mainLayout/bannerimage.xhtml" />
+					<div id="tagline">&nbsp;</div>
+				</ui:insert>
+			</div>
+			<div class="dom-body-text paragraph">
+				<p>
+					#{msgs.bannerlogin2}
+					<!--           <p>Easel is an <b>in-browser web design</b> tool that lets you mockup, collaborate and implement ideas with ease. -->
+					<br></br>
+				</p>
+			</div>
+			<div class="rectangle rectangle-1 rectangle-3"></div>
+			<span class="span-1">
+				<div class="container-fluid">
+					<div class="row-fluid">
+						<span class="span3"> 
+							<div class="well">
+								<ui:insert name="sidebarLeft">
+									<ui:include
+										src="/WEB-INF/flows/sections/mainLayout/sidebarLeft.xhtml" />
+								</ui:insert>
+								
+							</div>
+						</span> <span class="span9">
+							<div id="content">
+								<ui:insert name="content" />
+							</div>
+						</span>
+					</div>
+				</div>
+				<div class="container-fluid">
+					<div class="container"></div>
+				</div>
+				<div class="container-fluid container-fluid-1">
+					<div class="row-fluid1">
+						<span class="span12"> <img
+							src="(../../../resources/img/white_invert_30x40.png"
+							class="pull-right image image-1" />
+							<p>@easelapp</p>
+						</span>
+					</div>
+				</div>
+			</span>
+		</div>
+	</div>
+</h:body>
+
+</html>

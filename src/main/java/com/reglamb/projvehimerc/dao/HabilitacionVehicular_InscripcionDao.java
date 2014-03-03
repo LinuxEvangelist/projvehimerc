@@ -1,0 +1,12 @@
+package com.reglamb.projvehimerc.dao;
+
+import java.util.List;
+
+import com.reglamb.projvehimerc.domain.HabilitacionVehicular_Inscripcion;
+
+public interface HabilitacionVehicular_InscripcionDao extends GenericDao<HabilitacionVehicular_Inscripcion>{
+	public void saveHabilitacionVehicularInscrip(HabilitacionVehicular_Inscripcion habilitacioninscrip);
+	public void deleteHabilitacionVehicularInscrip(String habilitacioninscrip) ;
+	public List<HabilitacionVehicular_Inscripcion> getAllHabilitacionVehicularInscrip(HabilitacionVehicular_Inscripcion habilitacioninscrip) ;
+	public HabilitacionVehicular_Inscripcion selectHabilitacionVehicularInscripById(Long idhabilitacioninscrip) ;
+}

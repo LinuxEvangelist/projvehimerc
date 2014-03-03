@@ -1,0 +1,111 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:c="http://java.sun.com/jsp/jstl/core"
+	xmlns:a4j="http://richfaces.org/a4j"
+	xmlns:rich="http://richfaces.org/rich">
+
+<h:head>
+	<title>Single Sign On - Login</title>
+</h:head>
+
+<h:body>
+	<h:outputStylesheet library="css" name="loginStyling_external.css" />
+
+	<div class="wrapper">
+		<div class="logo-header">
+			<a href="http://localhost:8080/projvehimerc/spring/index"
+				class="logolink" tabindex="1">Oracle</a>
+		</div>
+		<div class="insible">s</div>
+		<br></br>
+		<div class="main-container">
+			<div class="t-t">
+				<span class="tt-l-corner"></span><span class="tt-r-corner"></span>
+			</div>
+			<div class="t-m">
+				<div class="login-mainarea">
+					<div class="graybox-wrapper">
+						<span class="graybox-signintxt ssoParahead1">
+							#{msgs.loginSignIn} </span>
+						<div class="graybox-container">
+							<div class="gb-t">
+								<span class="gb-t-l"></span>
+								
+								<span class="gb-t-r"></span>
+							</div>
+							<div class="gb-m">
+
+								<div class="signinform">
+									<form name="loginform" action="${request.contextPath}/spring/loginProcess" method="post">
+											<p>
+												User: <br />
+												<c:if test="${not empty param.login_error}">
+													<c:set var="username"
+														value="${sessionScope.SPRING_SECURITY_LAST_USERNAME}" />
+												</c:if>
+												<input type="text" name="j_username" value="#{username}" />
+											</p>
+											<p>
+												Password: <br /> <input type="password" name="j_password" />
+											</p>
+											<p>
+												<input type="checkbox" name="_spring_security_remember_me" />
+												Don't ask for my password for two weeks:
+											</p>
+											<p>
+												<input name="submit" type="submit" value="Login" action="#{mainController.printWelcome}" />
+											</p>
+									</form>
+								</div>
+
+								<div class="InstCont">
+									<div class="Inst">
+										<c:if test="${not empty param.login_error}">
+											<div class="error">
+												Your login attempt was not successful, try again.<br />
+												Reason:
+												#{sessionScope.SPRING_SECURITY_LAST_EXCEPTION.message}
+											</div>
+										</c:if>
+
+									</div>
+								</div>
+
+							</div>
+							<div class="gb-b">
+								<span class="gb-b-l"></span><span class="gb-b-r"></span>
+							</div>
+						</div>
+						<div class="pwrdbytxt">#{msgs.adminsiteby}</div>
+					</div>
+					<div class="footer-info">
+						<div>#{msgs.privateStatement}</div>
+					</div>
+				</div>
+			</div>
+			<div class="t-b">
+				<span class="tb-l-corner"></span> <span class="tb-r-corner"></span>
+			</div>
+		</div>
+		<div>
+			<div class="footer-content">
+				<a href="http://www.regionlambayeque.gob.pe/
+"
+					class="footer-tagline"> Hardware and Software. Engineered to
+					work together </a>
+			</div>
+			<div class="footer-legalnote-container">
+				<span class="legalese"> <a
+					href=" http://www.regionlambayeque.gob.pe/">Gobierno Regional</a> |
+					<a href=" http://www.regionlambayeque.gob.pe/">Politica de
+						Privacidad</a>
+				</span>
+			</div>
+		</div>
+	</div>
+</h:body>
+</html>

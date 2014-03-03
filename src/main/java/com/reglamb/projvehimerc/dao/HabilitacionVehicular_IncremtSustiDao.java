@@ -1,0 +1,14 @@
+package com.reglamb.projvehimerc.dao;
+
+import java.util.List;
+
+import com.reglamb.projvehimerc.domain.HabilitacionVehicular_IncremtSusti;
+
+public interface HabilitacionVehicular_IncremtSustiDao extends GenericDao<HabilitacionVehicular_IncremtSusti>{
+	
+	public void saveHabilitacionVehicularIncremtSusti(HabilitacionVehicular_IncremtSusti habilitacionincremtsusti);
+	public void deleteHabilitacionVehicularIncremtSusti(String habilitacionincremtsusti) ;
+	public List<HabilitacionVehicular_IncremtSusti> getAllHabilitacionVehicularIncremtSusti(HabilitacionVehicular_IncremtSusti habilitacionincremtsusti) ;
+	public HabilitacionVehicular_IncremtSusti selectHabilitacionVehicularIncremtSustiById(Long idhabilitacionincremtsusti) ;
+
+}

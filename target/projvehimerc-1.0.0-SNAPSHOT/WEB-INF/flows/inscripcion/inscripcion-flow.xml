@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<flow xmlns="http://www.springframework.org/schema/webflow"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.springframework.org/schema/webflow
+http://www.springframework.org/schema/webflow/spring-webflow-2.3.xsd">
+<persistence-context />
+
+	<view-state id="login">
+		<transition on="acceso" to="formulario" />
+		<transition on="cancelar" to="negadoacceso" />
+		</view-state>
+	<view-state id="formulario">
+		<transition on="next" to="inscripcion" />
+	</view-state>
+	<view-state id="negadoacceso" />
+</flow>

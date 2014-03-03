@@ -1,0 +1,485 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editmodel:ClassDiagramEditModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:editmodel="editmodel.xmi" xmlns:options="options.xmi" size="1984,1223" id="com.reglamb.projvehimerc.domain" metadata="uml2-1.0" initialized="true" zoom="0.5" scrolledY="-110" tag="1000" key="32303037303533312D313030302070726F6A766568696D6572632F6D6173746572766F646F6F">
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.5/@sourceConnections.0 //@children.6/@sourceConnections.0 //@children.7/@sourceConnections.0 //@children.8/@sourceConnections.4" name="Vehiculo" location="344,207" size="209,364" id="com.reglamb.projvehimerc.domain/Vehiculo" runTimeClassModel="vehiccitv,combustible,carga_util,largo,marca,año_fab,altura,n_chasis,peso_seco,n_ejes,vehicsoat,id_vehiculo,carroceria,ancho,clase,modelo,transportista,vehictenec">
+    <children xsi:type="editmodel:CompartmentEditModel" size="186,324">
+      <children xsi:type="editmodel:AttributeEditModel" name="altura" id="com.reglamb.projvehimerc.domain/Vehiculo#altura"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="ancho" id="com.reglamb.projvehimerc.domain/Vehiculo#ancho"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="año_fab" id="com.reglamb.projvehimerc.domain/Vehiculo#año_fab"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="carga_util" id="com.reglamb.projvehimerc.domain/Vehiculo#carga_util"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="carroceria" id="com.reglamb.projvehimerc.domain/Vehiculo#carroceria"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="clase" id="com.reglamb.projvehimerc.domain/Vehiculo#clase"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="combustible" id="com.reglamb.projvehimerc.domain/Vehiculo#combustible"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="id_vehiculo" id="com.reglamb.projvehimerc.domain/Vehiculo#id_vehiculo"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="largo" id="com.reglamb.projvehimerc.domain/Vehiculo#largo"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="marca" id="com.reglamb.projvehimerc.domain/Vehiculo#marca"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="modelo" id="com.reglamb.projvehimerc.domain/Vehiculo#modelo"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="n_chasis" id="com.reglamb.projvehimerc.domain/Vehiculo#n_chasis"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="n_ejes" id="com.reglamb.projvehimerc.domain/Vehiculo#n_ejes"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="peso_seco" id="com.reglamb.projvehimerc.domain/Vehiculo#peso_seco"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="transportista" id="com.reglamb.projvehimerc.domain/Transportista@transportista+com.reglamb.projvehimerc.domain/Vehiculo@|com.reglamb.projvehimerc.domain/Transportista#transportista"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="vehiccitv" id="com.reglamb.projvehimerc.domain.vehiculo/Vehiculo_Citv@vehiccitv+com.reglamb.projvehimerc.domain/Vehiculo@|com.reglamb.projvehimerc.domain.vehiculo/Vehiculo_Citv#vehiccitv"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="vehicsoat" id="com.reglamb.projvehimerc.domain.vehiculo/Vehiculo_Soat@vehicsoat+com.reglamb.projvehimerc.domain/Vehiculo@|com.reglamb.projvehimerc.domain.vehiculo/Vehiculo_Soat#vehicsoat"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="vehictenec" id="com.reglamb.projvehimerc.domain.vehiculo/Vehiculo_Tenencia@vehictenec+com.reglamb.projvehimerc.domain/Vehiculo@|com.reglamb.projvehimerc.domain.vehiculo/Vehiculo_Tenencia#vehictenec"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="com.reglamb.projvehimerc.domain/Vehiculo-Soyatec::Import->com.reglamb.projvehimerc.domain.vehiculo/Vehiculo_Tenencia" source="//@children.0" target="//@children.6" targetEnd="//@children.0/@sourceConnections.0/@children.2" label="//@children.0/@sourceConnections.0/@children.0" sourceEnd="//@children.0/@sourceConnections.0/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Import»" size="49,13" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,60" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="188,182"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="com.reglamb.projvehimerc.domain/Vehiculo-Soyatec::Import->com.reglamb.projvehimerc.domain.vehiculo/Vehiculo_Soat" source="//@children.0" target="//@children.5" targetEnd="//@children.0/@sourceConnections.1/@children.2" label="//@children.0/@sourceConnections.1/@children.0" sourceEnd="//@children.0/@sourceConnections.1/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Import»" size="49,13" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,154" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="179,89"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="com.reglamb.projvehimerc.domain/Vehiculo-Soyatec::Import->com.reglamb.projvehimerc.domain/Transportista" source="//@children.0" target="//@children.8" targetEnd="//@children.0/@sourceConnections.2/@children.2" label="//@children.0/@sourceConnections.2/@children.0" sourceEnd="//@children.0/@sourceConnections.2/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Import»" size="49,13" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="209,279" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,35"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="com.reglamb.projvehimerc.domain/Vehiculo-Soyatec::Import->com.reglamb.projvehimerc.domain.vehiculo/Vehiculo_Citv" source="//@children.0" target="//@children.7" targetEnd="//@children.0/@sourceConnections.3/@children.2" label="//@children.0/@sourceConnections.3/@children.0" sourceEnd="//@children.0/@sourceConnections.3/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Import»" size="49,13" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,340" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="142,23"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true" showAssociationMember="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.9/@sourceConnections.0 //@children.9/@sourceConnections.1 //@children.10/@sourceConnections.0 //@children.10/@sourceConnections.1 //@children.11/@sourceConnections.0 //@children.11/@sourceConnections.1" name="TransportistaJuridico" location="945,761" size="391,130" id="com.reglamb.projvehimerc.domain/TransportistaJuridico" runTimeClassModel="razonsocial,constitucion,sucursalTransportista,accionistaTransportista,representanteTransportista">
+    <children xsi:type="editmodel:CompartmentEditModel" size="368,90">
+      <children xsi:type="editmodel:AttributeEditModel" name="accionistaTransportista" id="com.reglamb.projvehimerc.domain/TransportistaJuridico#accionistaTransportista"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="constitucion" id="com.reglamb.projvehimerc.domain/TransportistaJuridico#constitucion"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="razonsocial" id="com.reglamb.projvehimerc.domain/TransportistaJuridico#razonsocial"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="representanteTransportista" id="com.reglamb.projvehimerc.domain/TransportistaJuridico#representanteTransportista"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="sucursalTransportista" id="com.reglamb.projvehimerc.domain/TransportistaJuridico#sucursalTransportista"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="com.reglamb.projvehimerc.domain/Transportista&lt;-com.reglamb.projvehimerc.domain/TransportistaJuridico" source="//@children.1" target="//@children.2/@sourceConnections.0" targetEnd="//@children.1/@sourceConnections.0/@children.1" sourceEnd="//@children.1/@sourceConnections.0/@children.0" connectionRouterKind="GeneralizationManhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="195,0" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="com.reglamb.projvehimerc.domain/TransportistaJuridico-Standard::Derive->com.reglamb.projvehimerc.domain/Transportista" source="//@children.1" target="//@children.8" targetEnd="//@children.1/@sourceConnections.1/@children.2" label="//@children.1/@sourceConnections.1/@children.0" sourceEnd="//@children.1/@sourceConnections.1/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Derive»" size="49,13" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="109,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="236,235"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true" showAssociationMember="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="TransportistaNatural" location="540,761" size="199,76" id="com.reglamb.projvehimerc.domain/TransportistaNatural" runTimeClassModel="natapellidos,natnombre">
+    <children xsi:type="editmodel:CompartmentEditModel" size="126,36">
+      <children xsi:type="editmodel:AttributeEditModel" name="natapellidos" id="com.reglamb.projvehimerc.domain/TransportistaNatural#natapellidos"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="natnombre" id="com.reglamb.projvehimerc.domain/TransportistaNatural#natnombre"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" targetConnections="//@children.1/@sourceConnections.0" autoLocated="true" id="com.reglamb.projvehimerc.domain/Transportista&lt;-com.reglamb.projvehimerc.domain/TransportistaNatural" source="//@children.2" target="//@children.8" targetEnd="//@children.2/@sourceConnections.0/@children.1" sourceEnd="//@children.2/@sourceConnections.0/@children.0" connectionRouterKind="GeneralizationManhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="99,0" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="114,288" anchorKind="FixedAtEdge"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="com.reglamb.projvehimerc.domain/TransportistaNatural-Standard::Derive->com.reglamb.projvehimerc.domain/Transportista" source="//@children.2" target="//@children.8" targetEnd="//@children.2/@sourceConnections.1/@children.2" label="//@children.2/@sourceConnections.1/@children.0" sourceEnd="//@children.2/@sourceConnections.1/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Derive»" size="49,13" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="181,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="17,283"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true" showAssociationMember="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.8/@sourceConnections.0 //@children.8/@sourceConnections.1 //@children.8/@sourceConnections.5 //@children.12/@sourceConnections.0" name="HabilitacionVehicular_Inscripcion" location="958,45" size="293,310" id="com.reglamb.projvehimerc.domain/HabilitacionVehicular_Inscripcion" runTimeClassModel="numsisgedo,idhabilitacionvehicularid,copiasoat,nominavehiculo,actacertificacion,preciovehicular,copiasimpltarjeta,copiasimplcitv,observaciones,numrecibobanc,activo,nominaconductores,inscripcionfecha,transportista,user">
+    <children xsi:type="editmodel:CompartmentEditModel" size="187,270">
+      <children xsi:type="editmodel:AttributeEditModel" name="actacertificacion" id="com.reglamb.projvehimerc.domain/HabilitacionVehicular_Inscripcion#actacertificacion"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="activo" id="com.reglamb.projvehimerc.domain/HabilitacionVehicular_Inscripcion#activo"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="copiasimplcitv" id="com.reglamb.projvehimerc.domain/HabilitacionVehicular_Inscripcion#copiasimplcitv"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="copiasimpltarjeta" id="com.reglamb.projvehimerc.domain/HabilitacionVehicular_Inscripcion#copiasimpltarjeta"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="copiasoat" id="com.reglamb.projvehimerc.domain/HabilitacionVehicular_Inscripcion#copiasoat"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="idhabilitacionvehicularid" id="com.reglamb.projvehimerc.domain/HabilitacionVehicular_Inscripcion#idhabilitacionvehicularid"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="inscripcionfecha" id="com.reglamb.projvehimerc.domain/HabilitacionVehicular_Inscripcion#inscripcionfecha"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="nominaconductores" id="com.reglamb.projvehimerc.domain/HabilitacionVehicular_Inscripcion#nominaconductores"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="nominavehiculo" id="com.reglamb.projvehimerc.domain/HabilitacionVehicular_Inscripcion#nominavehiculo"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="numrecibobanc" id="com.reglamb.projvehimerc.domain/HabilitacionVehicular_Inscripcion#numrecibobanc"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="numsisgedo" id="com.reglamb.projvehimerc.domain/HabilitacionVehicular_Inscripcion#numsisgedo"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="observaciones" id="com.reglamb.projvehimerc.domain/HabilitacionVehicular_Inscripcion#observaciones"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="preciovehicular" id="com.reglamb.projvehimerc.domain/HabilitacionVehicular_Inscripcion#preciovehicular"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="transportista" id="com.reglamb.projvehimerc.domain/Transportista@transportista+com.reglamb.projvehimerc.domain/HabilitacionVehicular_Inscripcion@|com.reglamb.projvehimerc.domain/Transportista#transportista"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="user" id="com.reglamb.projvehimerc.domain/User@user+com.reglamb.projvehimerc.domain/HabilitacionVehicular_Inscripcion@|com.reglamb.projvehimerc.domain/User#user"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="com.reglamb.projvehimerc.domain/HabilitacionVehicular_Inscripcion-Soyatec::Import->com.reglamb.projvehimerc.domain/Transportista" source="//@children.3" target="//@children.8" targetEnd="//@children.3/@sourceConnections.0/@children.2" label="//@children.3/@sourceConnections.0/@children.0" sourceEnd="//@children.3/@sourceConnections.0/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Import»" size="49,13" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,280" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="129,0"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="com.reglamb.projvehimerc.domain/HabilitacionVehicular_Inscripcion-Soyatec::Import->com.reglamb.projvehimerc.domain/User" source="//@children.3" target="//@children.12" targetEnd="//@children.3/@sourceConnections.1/@children.2" label="//@children.3/@sourceConnections.1/@children.0" sourceEnd="//@children.3/@sourceConnections.1/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Import»" size="49,13" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="38,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="141,162"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true" showAssociationMember="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.8/@sourceConnections.2 //@children.8/@sourceConnections.3 //@children.8/@sourceConnections.6" name="Ubigeo" location="1090,464" size="190,130" id="com.reglamb.projvehimerc.domain/Ubigeo" runTimeClassModel="observacion,direccion_ubigeo,departamento,distrito,id_ubigeo,provincia,transportista,numero_ubigeo">
+    <children xsi:type="editmodel:CompartmentEditModel" size="167,90">
+      <children xsi:type="editmodel:AttributeEditModel" name="direccion_ubigeo" id="com.reglamb.projvehimerc.domain/Ubigeo#direccion_ubigeo"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="id_ubigeo" id="com.reglamb.projvehimerc.domain/Ubigeo#id_ubigeo"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="numero_ubigeo" id="com.reglamb.projvehimerc.domain/Ubigeo#numero_ubigeo"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="observacion" id="com.reglamb.projvehimerc.domain/Ubigeo#observacion"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="transportista" id="com.reglamb.projvehimerc.domain/Transportista@transportista+com.reglamb.projvehimerc.domain/Ubigeo@|com.reglamb.projvehimerc.domain/Transportista#transportista"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="com.reglamb.projvehimerc.domain/Ubigeo-Soyatec::Import->com.reglamb.projvehimerc.domain/Transportista" source="//@children.4" target="//@children.8" targetEnd="//@children.4/@sourceConnections.0/@children.2" label="//@children.4/@sourceConnections.0/@children.0" sourceEnd="//@children.4/@sourceConnections.0/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Import»" size="49,13" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,25" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="236,58"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true" showAssociationMember="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.0/@sourceConnections.1" name="Vehiculo_Soat" location="54,272" size="179,179" id="com.reglamb.projvehimerc.domain.vehiculo/Vehiculo_Soat" runTimeClassModel="fech_vigentedesde,fech_vigentehasta,fech_expe,num_poliza,empresaaseg,num_expediente,id_soat">
+    <children xsi:type="editmodel:CompartmentEditModel" size="156,126">
+      <children xsi:type="editmodel:AttributeEditModel" name="empresaaseg" id="com.reglamb.projvehimerc.domain.vehiculo/Vehiculo_Soat#empresaaseg"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="fech_expe" id="com.reglamb.projvehimerc.domain.vehiculo/Vehiculo_Soat#fech_expe"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="fech_vigentedesde" id="com.reglamb.projvehimerc.domain.vehiculo/Vehiculo_Soat#fech_vigentedesde"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="fech_vigentehasta" id="com.reglamb.projvehimerc.domain.vehiculo/Vehiculo_Soat#fech_vigentehasta"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="id_soat" id="com.reglamb.projvehimerc.domain.vehiculo/Vehiculo_Soat#id_soat"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="num_expediente" id="com.reglamb.projvehimerc.domain.vehiculo/Vehiculo_Soat#num_expediente"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="num_poliza" id="com.reglamb.projvehimerc.domain.vehiculo/Vehiculo_Soat#num_poliza"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="com.reglamb.projvehimerc.domain.vehiculo/Vehiculo_Soat@vehicsoat+com.reglamb.projvehimerc.domain/Vehiculo@" source="//@children.5" target="//@children.0" targetEnd="//@children.5/@sourceConnections.0/@children.2" label="//@children.5/@sourceConnections.0/@children.0" sourceEnd="//@children.5/@sourceConnections.0/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,13" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="vehicsoat" location="179,119" id="com.reglamb.projvehimerc.domain.vehiculo/Vehiculo_Soat@vehicsoat+com.reglamb.projvehimerc.domain/Vehiculo@|com.reglamb.projvehimerc.domain.vehiculo/Vehiculo_Soat#vehicsoat" attachSource="true" multiplicityLabel="//@children.5/@sourceConnections.0/@children.1/@children.1" roleLabel="//@children.5/@sourceConnections.0/@children.1/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - vehicsoat" location="239,461" size="63,13" anchorKind="FirstPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="239,434" size="20,13" anchorKind="FirstPart"/>
+      </children>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,158" id="com.reglamb.projvehimerc.domain.vehiculo/Vehiculo_Soat@vehicsoat+com.reglamb.projvehimerc.domain/Vehiculo@|com.reglamb.projvehimerc.domain/Vehiculo#"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true" showAssociationMember="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.0/@sourceConnections.0" name="Vehiculo_Tenencia" location="49,85" size="188,243" id="com.reglamb.projvehimerc.domain.vehiculo/Vehiculo_Tenencia" runTimeClassModel="fech_hastaarrend,tipo_arrendamiento,fech_desdearrend,entidad,getAmbito(),idtenenciavehic,getEntidad(),ambito,setEntidad(Ljava.lang.String;),setAmbito(Ljava.lang.String;)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="165,108">
+      <children xsi:type="editmodel:AttributeEditModel" name="fech_desdearrend" id="com.reglamb.projvehimerc.domain.vehiculo/Vehiculo_Tenencia#fech_desdearrend"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="fech_hastaarrend" id="com.reglamb.projvehimerc.domain.vehiculo/Vehiculo_Tenencia#fech_hastaarrend"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="idtenenciavehic" id="com.reglamb.projvehimerc.domain.vehiculo/Vehiculo_Tenencia#idtenenciavehic"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="tipo_arrendamiento" id="com.reglamb.projvehimerc.domain.vehiculo/Vehiculo_Tenencia#tipo_arrendamiento"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="entidad" id="com.reglamb.projvehimerc.domain.vehiculo/Vehiculo_Tenencia#entidad"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="ambito" id="com.reglamb.projvehimerc.domain.vehiculo/Vehiculo_Tenencia#ambito"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="90,72">
+      <children xsi:type="editmodel:MethodEditModel" name="setEntidad" id="com.reglamb.projvehimerc.domain.vehiculo/Vehiculo_Tenencia#setEntidad(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getAmbito" id="com.reglamb.projvehimerc.domain.vehiculo/Vehiculo_Tenencia#getAmbito()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getEntidad" id="com.reglamb.projvehimerc.domain.vehiculo/Vehiculo_Tenencia#getEntidad()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setAmbito" id="com.reglamb.projvehimerc.domain.vehiculo/Vehiculo_Tenencia#setAmbito(Ljava.lang.String;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="com.reglamb.projvehimerc.domain.vehiculo/Vehiculo_Tenencia@vehictenec+com.reglamb.projvehimerc.domain/Vehiculo@" source="//@children.6" target="//@children.0" targetEnd="//@children.6/@sourceConnections.0/@children.2" label="//@children.6/@sourceConnections.0/@children.0" sourceEnd="//@children.6/@sourceConnections.0/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,13" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="vehictenec" location="188,152" id="com.reglamb.projvehimerc.domain.vehiculo/Vehiculo_Tenencia@vehictenec+com.reglamb.projvehimerc.domain/Vehiculo@|com.reglamb.projvehimerc.domain.vehiculo/Vehiculo_Tenencia#vehictenec" attachSource="true" multiplicityLabel="//@children.6/@sourceConnections.0/@children.1/@children.1" roleLabel="//@children.6/@sourceConnections.0/@children.1/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - vehictenec" location="243,216" size="70,13" anchorKind="FirstPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="243,243" size="20,13" anchorKind="FirstPart"/>
+      </children>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,40" id="com.reglamb.projvehimerc.domain.vehiculo/Vehiculo_Tenencia@vehictenec+com.reglamb.projvehimerc.domain/Vehiculo@|com.reglamb.projvehimerc.domain/Vehiculo#"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true" showAssociationMember="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.0/@sourceConnections.3" name="Vehiculo_Citv" location="64,524" size="142,125" id="com.reglamb.projvehimerc.domain.vehiculo/Vehiculo_Citv" runTimeClassModel="num_citv,id_citv,fech_inspeccion">
+    <children xsi:type="editmodel:CompartmentEditModel" size="112,72">
+      <children xsi:type="editmodel:AttributeEditModel" name="fech_expe" id="com.reglamb.projvehimerc.domain.vehiculo/Vehiculo_Citv#fech_expe"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="id_citv" id="com.reglamb.projvehimerc.domain.vehiculo/Vehiculo_Citv#id_citv"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="num_citv" id="com.reglamb.projvehimerc.domain.vehiculo/Vehiculo_Citv#num_citv"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="fech_inspeccion" id="com.reglamb.projvehimerc.domain.vehiculo/Vehiculo_Citv#fech_inspeccion"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="com.reglamb.projvehimerc.domain.vehiculo/Vehiculo_Citv@vehiccitv+com.reglamb.projvehimerc.domain/Vehiculo@" source="//@children.7" target="//@children.0" targetEnd="//@children.7/@sourceConnections.0/@children.2" label="//@children.7/@sourceConnections.0/@children.0" sourceEnd="//@children.7/@sourceConnections.0/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,13" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="vehiccitv" location="142,53" id="com.reglamb.projvehimerc.domain.vehiculo/Vehiculo_Citv@vehiccitv+com.reglamb.projvehimerc.domain/Vehiculo@|com.reglamb.projvehimerc.domain.vehiculo/Vehiculo_Citv#vehiccitv" attachSource="true" multiplicityLabel="//@children.7/@sourceConnections.0/@children.1/@children.1" roleLabel="//@children.7/@sourceConnections.0/@children.1/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - vehiccitv" location="213,583" size="58,13" anchorKind="FirstPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="213,556" size="20,13" anchorKind="FirstPart"/>
+      </children>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,344" id="com.reglamb.projvehimerc.domain.vehiculo/Vehiculo_Citv@vehiccitv+com.reglamb.projvehimerc.domain/Vehiculo@|com.reglamb.projvehimerc.domain/Vehiculo#"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true" showAssociationMember="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.2/@sourceConnections.0 //@children.0/@sourceConnections.2 //@children.1/@sourceConnections.1 //@children.2/@sourceConnections.1 //@children.3/@sourceConnections.0 //@children.4/@sourceConnections.0 //@children.13/@sourceConnections.0 //@children.17/@sourceConnections.0 //@children.13/@sourceConnections.1 //@children.17/@sourceConnections.3" name="Transportista" location="704,441" size="236,292" id="com.reglamb.projvehimerc.domain/Transportista" runTimeClassModel="conductor,ruc,telefono,referencias,ubigeo,idtransportista,setHabilitacionvehicularincremtsusti(Ljava.util.Set;),tipodocumento,email,nombre_descripcentro_trans,objectosocial,lote_interior_trans,urbani_centro_trans,habilitacionvehicularinscripcion,zonaoperacion,habilitacionvehicularincrementosustitucion,numerodocumento,vehiculo">
+    <children xsi:type="editmodel:CompartmentEditModel" size="213,252">
+      <children xsi:type="editmodel:AttributeEditModel" name="conductor" id="com.reglamb.projvehimerc.domain/Transportista#conductor"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="email" id="com.reglamb.projvehimerc.domain/Transportista#email"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="idtransportista" id="com.reglamb.projvehimerc.domain/Transportista#idtransportista"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="lote_interior_trans" id="com.reglamb.projvehimerc.domain/Transportista#lote_interior_trans"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="nombre_descripcentro_trans" id="com.reglamb.projvehimerc.domain/Transportista#nombre_descripcentro_trans"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="numerodocumento" id="com.reglamb.projvehimerc.domain/Transportista#numerodocumento"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="objectosocial" id="com.reglamb.projvehimerc.domain/Transportista#objectosocial"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="referencias" id="com.reglamb.projvehimerc.domain/Transportista#referencias"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="ruc" id="com.reglamb.projvehimerc.domain/Transportista#ruc"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="telefono" id="com.reglamb.projvehimerc.domain/Transportista#telefono"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="tipodocumento" id="com.reglamb.projvehimerc.domain/Transportista#tipodocumento"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="urbani_centro_trans" id="com.reglamb.projvehimerc.domain/Transportista#urbani_centro_trans"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="vehiculo" id="com.reglamb.projvehimerc.domain/Transportista#vehiculo"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="zonaoperacion" id="com.reglamb.projvehimerc.domain/Transportista#zonaoperacion"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="com.reglamb.projvehimerc.domain/Transportista@transportista+com.reglamb.projvehimerc.domain/HabilitacionVehicular_Inscripcion@" source="//@children.8" target="//@children.3" targetEnd="//@children.8/@sourceConnections.0/@children.2" label="//@children.8/@sourceConnections.0/@children.0" sourceEnd="//@children.8/@sourceConnections.0/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,13" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="transportista" location="226,0" id="com.reglamb.projvehimerc.domain/Transportista@transportista+com.reglamb.projvehimerc.domain/HabilitacionVehicular_Inscripcion@|com.reglamb.projvehimerc.domain/Transportista#transportista" attachSource="true" multiplicityLabel="//@children.8/@sourceConnections.0/@children.1/@children.1" roleLabel="//@children.8/@sourceConnections.0/@children.1/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - transportista" location="843,420" size="80,13" anchorKind="FirstPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="937,420" size="20,13" anchorKind="FirstPart"/>
+      </children>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,300" id="com.reglamb.projvehimerc.domain/Transportista@transportista+com.reglamb.projvehimerc.domain/HabilitacionVehicular_Inscripcion@|com.reglamb.projvehimerc.domain/HabilitacionVehicular_Inscripcion#"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="com.reglamb.projvehimerc.domain/HabilitacionVehicular_Inscripcion@habilitacionvehicularinscripcion+com.reglamb.projvehimerc.domain/Transportista@" source="//@children.8" target="//@children.3" targetEnd="//@children.8/@sourceConnections.1/@children.2" label="//@children.8/@sourceConnections.1/@children.0" sourceEnd="//@children.8/@sourceConnections.1/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,13" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="253,20" id="com.reglamb.projvehimerc.domain/HabilitacionVehicular_Inscripcion@habilitacionvehicularinscripcion+com.reglamb.projvehimerc.domain/Transportista@|com.reglamb.projvehimerc.domain/Transportista#" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="habilitacionvehicularinscripcion" location="5,310" id="com.reglamb.projvehimerc.domain/HabilitacionVehicular_Inscripcion@habilitacionvehicularinscripcion+com.reglamb.projvehimerc.domain/Transportista@|com.reglamb.projvehimerc.domain/HabilitacionVehicular_Inscripcion#habilitacionvehicularinscripcion" multiplicityLabel="//@children.8/@sourceConnections.1/@children.2/@children.1" roleLabel="//@children.8/@sourceConnections.1/@children.2/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - habilitacionvehicularinscripcion" location="969,361" size="183,13" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="935,361" size="20,13" anchorKind="LastPart"/>
+      </children>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="com.reglamb.projvehimerc.domain/Ubigeo@ubigeo+com.reglamb.projvehimerc.domain/Transportista@" source="//@children.8" target="//@children.4" targetEnd="//@children.8/@sourceConnections.2/@children.2" label="//@children.8/@sourceConnections.2/@children.0" sourceEnd="//@children.8/@sourceConnections.2/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,13" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="236,88" id="com.reglamb.projvehimerc.domain/Ubigeo@ubigeo+com.reglamb.projvehimerc.domain/Transportista@|com.reglamb.projvehimerc.domain/Transportista#" attachSource="true" roleLabel="//@children.8/@sourceConnections.2/@children.1/@children.0">
+        <children xsi:type="editmodel:LabelEditModel" location="947,508" size="0,13" anchorKind="FirstPart"/>
+      </children>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="ubigeo" location="0,65" id="com.reglamb.projvehimerc.domain/Ubigeo@ubigeo+com.reglamb.projvehimerc.domain/Transportista@|com.reglamb.projvehimerc.domain/Ubigeo#ubigeo" multiplicityLabel="//@children.8/@sourceConnections.2/@children.2/@children.1" roleLabel="//@children.8/@sourceConnections.2/@children.2/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - ubigeo" location="1035,508" size="48,13" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="1063,535" size="20,13" anchorKind="LastPart"/>
+      </children>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="com.reglamb.projvehimerc.domain/Transportista@transportista+com.reglamb.projvehimerc.domain/Ubigeo@" source="//@children.8" target="//@children.4" targetEnd="//@children.8/@sourceConnections.3/@children.2" label="//@children.8/@sourceConnections.3/@children.0" sourceEnd="//@children.8/@sourceConnections.3/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,13" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="transportista" location="236,38" id="com.reglamb.projvehimerc.domain/Transportista@transportista+com.reglamb.projvehimerc.domain/Ubigeo@|com.reglamb.projvehimerc.domain/Transportista#transportista" attachSource="true" multiplicityLabel="//@children.8/@sourceConnections.3/@children.1/@children.1" roleLabel="//@children.8/@sourceConnections.3/@children.1/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - transportista" location="947,458" size="80,13" anchorKind="FirstPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="947,485" size="20,13" anchorKind="FirstPart"/>
+      </children>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,15" id="com.reglamb.projvehimerc.domain/Transportista@transportista+com.reglamb.projvehimerc.domain/Ubigeo@|com.reglamb.projvehimerc.domain/Ubigeo#"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="com.reglamb.projvehimerc.domain/Transportista@transportista+com.reglamb.projvehimerc.domain/Vehiculo@" source="//@children.8" target="//@children.0" targetEnd="//@children.8/@sourceConnections.4/@children.2" label="//@children.8/@sourceConnections.4/@children.0" sourceEnd="//@children.8/@sourceConnections.4/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,13" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="transportista" location="0,65" id="com.reglamb.projvehimerc.domain/Transportista@transportista+com.reglamb.projvehimerc.domain/Vehiculo@|com.reglamb.projvehimerc.domain/Transportista#transportista" attachSource="true" multiplicityLabel="//@children.8/@sourceConnections.4/@children.1/@children.1" roleLabel="//@children.8/@sourceConnections.4/@children.1/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - transportista" location="617,486" size="80,13" anchorKind="FirstPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="677,513" size="20,13" anchorKind="FirstPart"/>
+      </children>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="209,299" id="com.reglamb.projvehimerc.domain/Transportista@transportista+com.reglamb.projvehimerc.domain/Vehiculo@|com.reglamb.projvehimerc.domain/Vehiculo#" roleLabel="//@children.8/@sourceConnections.4/@children.2/@children.0">
+        <children xsi:type="editmodel:LabelEditModel" location="559,486" size="0,13" anchorKind="LastPart"/>
+      </children>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="com.reglamb.projvehimerc.domain/Transportista-Soyatec::Import->com.reglamb.projvehimerc.domain/HabilitacionVehicular_Inscripcion" source="//@children.8" target="//@children.3" targetEnd="//@children.8/@sourceConnections.5/@children.2" label="//@children.8/@sourceConnections.5/@children.0" sourceEnd="//@children.8/@sourceConnections.5/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Import»" size="49,13" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="253,10" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,304"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="com.reglamb.projvehimerc.domain/Transportista-Soyatec::Import->com.reglamb.projvehimerc.domain/Ubigeo" source="//@children.8" target="//@children.4" targetEnd="//@children.8/@sourceConnections.6/@children.2" label="//@children.8/@sourceConnections.6/@children.0" sourceEnd="//@children.8/@sourceConnections.6/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Import»" size="49,13" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="236,68" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,35"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true" showAssociationMember="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="Transportista_Accionista" location="1470,614" size="227,179" id="com.reglamb.projvehimerc.domain.transportista/Transportista_Accionista" runTimeClassModel="transportistajuridico,direccion,razonsocial,fech_ingreso,idtransportistaaccionista,ruc,dni,participacion">
+    <children xsi:type="editmodel:CompartmentEditModel" size="189,126">
+      <children xsi:type="editmodel:AttributeEditModel" name="direccion" id="com.reglamb.projvehimerc.domain.transportista/Transportista_Accionista#direccion"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="dni" id="com.reglamb.projvehimerc.domain.transportista/Transportista_Accionista#dni"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="fech_ingreso" id="com.reglamb.projvehimerc.domain.transportista/Transportista_Accionista#fech_ingreso"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="idtransportistaaccionista" id="com.reglamb.projvehimerc.domain.transportista/Transportista_Accionista#idtransportistaaccionista"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="participacion" id="com.reglamb.projvehimerc.domain.transportista/Transportista_Accionista#participacion"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="razonsocial" id="com.reglamb.projvehimerc.domain.transportista/Transportista_Accionista#razonsocial"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="ruc" id="com.reglamb.projvehimerc.domain.transportista/Transportista_Accionista#ruc"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="com.reglamb.projvehimerc.domain/TransportistaJuridico@transportistajuridico+com.reglamb.projvehimerc.domain.transportista/Transportista_Accionista@" source="//@children.9" target="//@children.1" targetEnd="//@children.9/@sourceConnections.0/@children.2" label="//@children.9/@sourceConnections.0/@children.0" sourceEnd="//@children.9/@sourceConnections.0/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,13" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,163" id="com.reglamb.projvehimerc.domain/TransportistaJuridico@transportistajuridico+com.reglamb.projvehimerc.domain.transportista/Transportista_Accionista@|com.reglamb.projvehimerc.domain.transportista/Transportista_Accionista#" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="transportistajuridico" location="391,16" id="com.reglamb.projvehimerc.domain/TransportistaJuridico@transportistajuridico+com.reglamb.projvehimerc.domain.transportista/Transportista_Accionista@|com.reglamb.projvehimerc.domain/TransportistaJuridico#transportistajuridico" multiplicityLabel="//@children.9/@sourceConnections.0/@children.2/@children.1" roleLabel="//@children.9/@sourceConnections.0/@children.2/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - transportistajuridico" location="1343,756" size="120,13" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="1343,783" size="20,13" anchorKind="LastPart"/>
+      </children>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="com.reglamb.projvehimerc.domain.transportista/Transportista_Accionista-Soyatec::Import->com.reglamb.projvehimerc.domain/TransportistaJuridico" source="//@children.9" target="//@children.1" targetEnd="//@children.9/@sourceConnections.1/@children.2" label="//@children.9/@sourceConnections.1/@children.0" sourceEnd="//@children.9/@sourceConnections.1/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Import»" size="49,13" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,143" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="376,0"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true" showAssociationMember="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="Transportista_Sucursal" location="1476,810" size="215,143" id="com.reglamb.projvehimerc.domain.transportista/Transportista_Sucursal" runTimeClassModel="transportistajuridico,fech_ingreso_sucur,telefono_sucur,ruc_sucur,correo_sucur,idtransportistasucursal">
+    <children xsi:type="editmodel:CompartmentEditModel" size="179,90">
+      <children xsi:type="editmodel:AttributeEditModel" name="idtransportistasucursal" id="com.reglamb.projvehimerc.domain.transportista/Transportista_Sucursal#idtransportistasucursal"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="fech_ingreso_sucur" id="com.reglamb.projvehimerc.domain.transportista/Transportista_Sucursal#fech_ingreso_sucur"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="telefono_sucur" id="com.reglamb.projvehimerc.domain.transportista/Transportista_Sucursal#telefono_sucur"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="ruc_sucur" id="com.reglamb.projvehimerc.domain.transportista/Transportista_Sucursal#ruc_sucur"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="correo_sucur" id="com.reglamb.projvehimerc.domain.transportista/Transportista_Sucursal#correo_sucur"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="com.reglamb.projvehimerc.domain/TransportistaJuridico@transportistajuridico+com.reglamb.projvehimerc.domain.transportista/Transportista_Sucursal@" source="//@children.10" target="//@children.1" targetEnd="//@children.10/@sourceConnections.0/@children.2" label="//@children.10/@sourceConnections.0/@children.0" sourceEnd="//@children.10/@sourceConnections.0/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,13" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,40" id="com.reglamb.projvehimerc.domain/TransportistaJuridico@transportistajuridico+com.reglamb.projvehimerc.domain.transportista/Transportista_Sucursal@|com.reglamb.projvehimerc.domain.transportista/Transportista_Sucursal#" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="transportistajuridico" location="391,89" id="com.reglamb.projvehimerc.domain/TransportistaJuridico@transportistajuridico+com.reglamb.projvehimerc.domain.transportista/Transportista_Sucursal@|com.reglamb.projvehimerc.domain/TransportistaJuridico#transportistajuridico" multiplicityLabel="//@children.10/@sourceConnections.0/@children.2/@children.1" roleLabel="//@children.10/@sourceConnections.0/@children.2/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - transportistajuridico" location="1343,830" size="120,13" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="1343,857" size="20,13" anchorKind="LastPart"/>
+      </children>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="com.reglamb.projvehimerc.domain.transportista/Transportista_Sucursal-Soyatec::Import->com.reglamb.projvehimerc.domain/TransportistaJuridico" source="//@children.10" target="//@children.1" targetEnd="//@children.10/@sourceConnections.1/@children.2" label="//@children.10/@sourceConnections.1/@children.0" sourceEnd="//@children.10/@sourceConnections.1/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Import»" size="49,13" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,44" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="391,119"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true" showAssociationMember="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="Transportista_Representante" location="1575,434" size="260,161" id="com.reglamb.projvehimerc.domain.transportista/Transportista_Representante" runTimeClassModel="transportistajuridico,correo_repre,idtransportistarepresentate,fech_ingreso_repre,ruc_repre,direccion_repre,telefono_repre">
+    <children xsi:type="editmodel:CompartmentEditModel" size="204,108">
+      <children xsi:type="editmodel:AttributeEditModel" name="idtransportistarepresentate" id="com.reglamb.projvehimerc.domain.transportista/Transportista_Representante#idtransportistarepresentate"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="ruc_repre" id="com.reglamb.projvehimerc.domain.transportista/Transportista_Representante#ruc_repre"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="fech_ingreso_repre" id="com.reglamb.projvehimerc.domain.transportista/Transportista_Representante#fech_ingreso_repre"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="correo_repre" id="com.reglamb.projvehimerc.domain.transportista/Transportista_Representante#correo_repre"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="direccion_repre" id="com.reglamb.projvehimerc.domain.transportista/Transportista_Representante#direccion_repre"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="telefono_repre" id="com.reglamb.projvehimerc.domain.transportista/Transportista_Representante#telefono_repre"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="com.reglamb.projvehimerc.domain/TransportistaJuridico@transportistajuridico+com.reglamb.projvehimerc.domain.transportista/Transportista_Representante@" source="//@children.11" target="//@children.1" targetEnd="//@children.11/@sourceConnections.0/@children.2" label="//@children.11/@sourceConnections.0/@children.0" sourceEnd="//@children.11/@sourceConnections.0/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,13" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,151" id="com.reglamb.projvehimerc.domain/TransportistaJuridico@transportistajuridico+com.reglamb.projvehimerc.domain.transportista/Transportista_Representante@|com.reglamb.projvehimerc.domain.transportista/Transportista_Representante#" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="transportistajuridico" location="381,0" id="com.reglamb.projvehimerc.domain/TransportistaJuridico@transportistajuridico+com.reglamb.projvehimerc.domain.transportista/Transportista_Representante@|com.reglamb.projvehimerc.domain/TransportistaJuridico#transportistajuridico" multiplicityLabel="//@children.11/@sourceConnections.0/@children.2/@children.1" roleLabel="//@children.11/@sourceConnections.0/@children.2/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - transportistajuridico" location="1199,740" size="120,13" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="1333,740" size="20,13" anchorKind="LastPart"/>
+      </children>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="com.reglamb.projvehimerc.domain.transportista/Transportista_Representante-Soyatec::Import->com.reglamb.projvehimerc.domain/TransportistaJuridico" source="//@children.11" target="//@children.1" targetEnd="//@children.11/@sourceConnections.1/@children.2" label="//@children.11/@sourceConnections.1/@children.0" sourceEnd="//@children.11/@sourceConnections.1/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Import»" size="49,13" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,155" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="408,10"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true" showAssociationMember="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.3/@sourceConnections.1 //@children.17/@sourceConnections.1 //@children.17/@sourceConnections.2" name="User" location="854,-214" size="141,176" id="com.reglamb.projvehimerc.domain/User" runTimeClassModel="pass_user,id_user,name_user,setName_user(Ljava.lang.String;),cod_user,setCargo(Ljava.lang.String;),cargo">
+    <children xsi:type="editmodel:CompartmentEditModel" size="118,90">
+      <children xsi:type="editmodel:AttributeEditModel" name="cod_user" id="com.reglamb.projvehimerc.domain/User#cod_user"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="id_user" id="com.reglamb.projvehimerc.domain/User#id_user"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="pass_user" id="com.reglamb.projvehimerc.domain/User#pass_user"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="name_user" id="com.reglamb.projvehimerc.domain/User#name_user"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="cargo" id="com.reglamb.projvehimerc.domain/User#HabilitacionVehicular_IncremtSusti"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="108,36">
+      <children xsi:type="editmodel:MethodEditModel" name="setCargo" id="com.reglamb.projvehimerc.domain/User#setCargo(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setName_user" id="com.reglamb.projvehimerc.domain/User#setName_user(Ljava.lang.String;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="com.reglamb.projvehimerc.domain/User@user+com.reglamb.projvehimerc.domain/HabilitacionVehicular_Inscripcion@" source="//@children.12" target="//@children.3" targetEnd="//@children.12/@sourceConnections.0/@children.2" label="//@children.12/@sourceConnections.0/@children.0" sourceEnd="//@children.12/@sourceConnections.0/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,13" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="user" location="122,177" id="com.reglamb.projvehimerc.domain/User@user+com.reglamb.projvehimerc.domain/HabilitacionVehicular_Inscripcion@|com.reglamb.projvehimerc.domain/User#user" attachSource="true" multiplicityLabel="//@children.12/@sourceConnections.0/@children.1/@children.1" roleLabel="//@children.12/@sourceConnections.0/@children.1/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - user" location="983,-31" size="34,13" anchorKind="FirstPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="949,-31" size="20,13" anchorKind="FirstPart"/>
+      </children>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="18,0" id="com.reglamb.projvehimerc.domain/User@user+com.reglamb.projvehimerc.domain/HabilitacionVehicular_Inscripcion@|com.reglamb.projvehimerc.domain/HabilitacionVehicular_Inscripcion#"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true" showAssociationMember="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="Conductor" location="240,704" size="172,148" id="com.reglamb.projvehimerc.domain/Conductor" runTimeClassModel="fech_nacimiento,licencia,id_conductor,fech_validacion,clase_categoria,transportista,apellido_nombre">
+    <children xsi:type="editmodel:CompartmentEditModel" size="149,108">
+      <children xsi:type="editmodel:AttributeEditModel" name="apellido_nombre" id="com.reglamb.projvehimerc.domain/Conductor#apellido_nombre"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="clase_categoria" id="com.reglamb.projvehimerc.domain/Conductor#clase_categoria"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="fech_nacimiento" id="com.reglamb.projvehimerc.domain/Conductor#fech_nacimiento"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="fech_validacion" id="com.reglamb.projvehimerc.domain/Conductor#fech_validacion"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="id_conductor" id="com.reglamb.projvehimerc.domain/Conductor#id_conductor"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="licencia" id="com.reglamb.projvehimerc.domain/Conductor#licencia"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="com.reglamb.projvehimerc.domain/Transportista@transportista+com.reglamb.projvehimerc.domain/Conductor@" source="//@children.13" target="//@children.8" targetEnd="//@children.13/@sourceConnections.0/@children.2" label="//@children.13/@sourceConnections.0/@children.0" sourceEnd="//@children.13/@sourceConnections.0/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,13" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="172,14" id="com.reglamb.projvehimerc.domain/Transportista@transportista+com.reglamb.projvehimerc.domain/Conductor@|com.reglamb.projvehimerc.domain/Conductor#" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="transportista" location="0,277" id="com.reglamb.projvehimerc.domain/Transportista@transportista+com.reglamb.projvehimerc.domain/Conductor@|com.reglamb.projvehimerc.domain/Transportista#transportista" multiplicityLabel="//@children.13/@sourceConnections.0/@children.2/@children.1" roleLabel="//@children.13/@sourceConnections.0/@children.2/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - transportista" location="617,698" size="80,13" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="677,725" size="20,13" anchorKind="LastPart"/>
+      </children>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="com.reglamb.projvehimerc.domain/Conductor-Soyatec::Import->com.reglamb.projvehimerc.domain/Transportista" source="//@children.13" target="//@children.8" targetEnd="//@children.13/@sourceConnections.1/@children.2" label="//@children.13/@sourceConnections.1/@children.0" sourceEnd="//@children.13/@sourceConnections.1/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Import»" size="49,13" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="172,34" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="15,292"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true" showAssociationMember="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="Departamento" location="1320,216" size="178,107" id="com.reglamb.projvehimerc.domain.ubigeo/Departamento" runTimeClassModel="referencia_depart,nombre_depart,id_depart">
+    <children xsi:type="editmodel:CompartmentEditModel" size="155,54">
+      <children xsi:type="editmodel:AttributeEditModel" name="id_depart" id="com.reglamb.projvehimerc.domain.ubigeo/Departamento#id_depart"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="nombre_depart" id="com.reglamb.projvehimerc.domain.ubigeo/Departamento#nombre_depart"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="referencia_depart" id="com.reglamb.projvehimerc.domain.ubigeo/Departamento#referencia_depart"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true" showAssociationMember="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="Distrito" location="1350,366" size="180,107" id="com.reglamb.projvehimerc.domain.ubigeo/Distrito" runTimeClassModel="nombre_distrito,referencia_distrito,id_distrito">
+    <children xsi:type="editmodel:CompartmentEditModel" size="157,54">
+      <children xsi:type="editmodel:AttributeEditModel" name="id_distrito" id="com.reglamb.projvehimerc.domain.ubigeo/Distrito#id_distrito"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="nombre_distrito" id="com.reglamb.projvehimerc.domain.ubigeo/Distrito#nombre_distrito"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="referencia_distrito" id="com.reglamb.projvehimerc.domain.ubigeo/Distrito#referencia_distrito"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true" showAssociationMember="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="Provincia" location="1528,240" size="192,107" id="com.reglamb.projvehimerc.domain.ubigeo/Provincia" runTimeClassModel="referencia_provincia,nombre_provincia,id_provincia">
+    <children xsi:type="editmodel:CompartmentEditModel" size="169,54">
+      <children xsi:type="editmodel:AttributeEditModel" name="id_provincia" id="com.reglamb.projvehimerc.domain.ubigeo/Provincia#id_provincia"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="nombre_provincia" id="com.reglamb.projvehimerc.domain.ubigeo/Provincia#nombre_provincia"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="referencia_provincia" id="com.reglamb.projvehimerc.domain.ubigeo/Provincia#referencia_provincia"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true" showAssociationMember="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="HabilitacionVehicular_IncremtSusti" location="634,44" size="306,238" id="com.reglamb.projvehimerc.domain/HabilitacionVehicular_IncremtSusti" runTimeClassModel="numsisgedo,copiasoat,copiasimpltarjeta,copiasimplcitv,idincrementosustitucion,observaciones,numrecibobanc,nominavehiculobajainter,precioincremento,actaincrementosustitucion,modificacionfecha,user,transportista">
+    <children xsi:type="editmodel:CompartmentEditModel" size="196,198">
+      <children xsi:type="editmodel:AttributeEditModel" name="actaincrementosustitucion" id="com.reglamb.projvehimerc.domain/HabilitacionVehicular_IncremtSusti#actaincrementosustitucion"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="copiasimplcitv" id="com.reglamb.projvehimerc.domain/HabilitacionVehicular_IncremtSusti#copiasimplcitv"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="copiasimpltarjeta" id="com.reglamb.projvehimerc.domain/HabilitacionVehicular_IncremtSusti#copiasimpltarjeta"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="copiasoat" id="com.reglamb.projvehimerc.domain/HabilitacionVehicular_IncremtSusti#copiasoat"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="idincrementosustitucion" id="com.reglamb.projvehimerc.domain/HabilitacionVehicular_IncremtSusti#idincrementosustitucion"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="modificacionfecha" id="com.reglamb.projvehimerc.domain/HabilitacionVehicular_IncremtSusti#modificacionfecha"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="nominavehiculobajainter" id="com.reglamb.projvehimerc.domain/HabilitacionVehicular_IncremtSusti#nominavehiculobajainter"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="numrecibobanc" id="com.reglamb.projvehimerc.domain/HabilitacionVehicular_IncremtSusti#numrecibobanc"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="numsisgedo" id="com.reglamb.projvehimerc.domain/HabilitacionVehicular_IncremtSusti#numsisgedo"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="observaciones" id="com.reglamb.projvehimerc.domain/HabilitacionVehicular_IncremtSusti#observaciones"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="precioincremento" id="com.reglamb.projvehimerc.domain/HabilitacionVehicular_IncremtSusti#precioincremento"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="com.reglamb.projvehimerc.domain/Transportista@transportista+com.reglamb.projvehimerc.domain/HabilitacionVehicular_IncremtSusti@" source="//@children.17" target="//@children.8" targetEnd="//@children.17/@sourceConnections.0/@children.2" label="//@children.17/@sourceConnections.0/@children.0" sourceEnd="//@children.17/@sourceConnections.0/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,13" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="187,238" id="com.reglamb.projvehimerc.domain/Transportista@transportista+com.reglamb.projvehimerc.domain/HabilitacionVehicular_IncremtSusti@|com.reglamb.projvehimerc.domain/HabilitacionVehicular_IncremtSusti#" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="transportista" location="117,0" id="com.reglamb.projvehimerc.domain/Transportista@transportista+com.reglamb.projvehimerc.domain/HabilitacionVehicular_IncremtSusti@|com.reglamb.projvehimerc.domain/Transportista#transportista" multiplicityLabel="//@children.17/@sourceConnections.0/@children.2/@children.1" roleLabel="//@children.17/@sourceConnections.0/@children.2/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - transportista" location="827,420" size="80,13" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="793,420" size="20,13" anchorKind="LastPart"/>
+      </children>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="com.reglamb.projvehimerc.domain/User@user+com.reglamb.projvehimerc.domain/HabilitacionVehicular_IncremtSusti@" source="//@children.17" target="//@children.12" targetEnd="//@children.17/@sourceConnections.1/@children.2" label="//@children.17/@sourceConnections.1/@children.0" sourceEnd="//@children.17/@sourceConnections.1/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,13" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="262,0" id="com.reglamb.projvehimerc.domain/User@user+com.reglamb.projvehimerc.domain/HabilitacionVehicular_IncremtSusti@|com.reglamb.projvehimerc.domain/HabilitacionVehicular_IncremtSusti#" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="user" location="42,177" id="com.reglamb.projvehimerc.domain/User@user+com.reglamb.projvehimerc.domain/HabilitacionVehicular_IncremtSusti@|com.reglamb.projvehimerc.domain/User#user" multiplicityLabel="//@children.17/@sourceConnections.1/@children.2/@children.1" roleLabel="//@children.17/@sourceConnections.1/@children.2/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - user" location="903,-31" size="34,13" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="869,-31" size="20,13" anchorKind="LastPart"/>
+      </children>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="com.reglamb.projvehimerc.domain/HabilitacionVehicular_IncremtSusti-Soyatec::Import->com.reglamb.projvehimerc.domain/User" source="//@children.17" target="//@children.12" targetEnd="//@children.17/@sourceConnections.2/@children.2" label="//@children.17/@sourceConnections.2/@children.0" sourceEnd="//@children.17/@sourceConnections.2/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Import»" size="49,13" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="242,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="5,177"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="com.reglamb.projvehimerc.domain/HabilitacionVehicular_IncremtSusti-Soyatec::Import->com.reglamb.projvehimerc.domain/Transportista" source="//@children.17" target="//@children.8" targetEnd="//@children.17/@sourceConnections.3/@children.2" label="//@children.17/@sourceConnections.3/@children.0" sourceEnd="//@children.17/@sourceConnections.3/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Import»" size="49,13" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="167,238" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="80,0"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true" showAssociationMember="true"/>
+  </children>
+  <diagramOptions xsi:type="options:ClassDiagramOptions" properties="wireOptions=7;Product=eUML2" autoName="false"/>
+  <boardSetting snapToGeometry="true" gridEnabled="true" gridSpacing="15,15" gridOrigin="0,0" rulerUnit="pixel">
+    <leftRuler/>
+    <topRuler/>
+  </boardSetting>
+  <classDiagramPreferences xsi:type="editmodel:UMLClassDiagramPreference" showPopupBars="true" showConnectionHandles="true" attributeSorter="Natural" methodSorter="Natural" showClassStereotype="true" showPackageStereotype="true" showDependencyStereotype="true" showInterfaceStereotype="true" innerClassSorter="Natural" showPublicAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true" showAssociationMember="true"/>
+</editmodel:ClassDiagramEditModel>

@@ -1,0 +1,59 @@
+@CHARSET "UTF-8";
+/* 
+wide viewport 
+bigger than 1200 px 
+*/       
+
+#stage,
+#top_subnav_branding,
+#section-header,
+#branding,
+#proj_nav,
+#sub_nav, 
+#wrapper-2,
+#nav-global,
+#nav-global ul,
+#nav-global ul ul {
+	max-width: 1180px;
+}
+#col-subcol #wrapper-3 {
+	max-width:1170px;
+}
+
+/* 2 column layout: no nav | main | sidebar */
+#col-subcol-equal #wrapper-3 {
+	max-width:1170px;
+}  
+
+/* 3 column layout: | main | sidebar | sidebar */
+#col-subcol-subcol #wrapper-3 {
+	max-width:1170px;
+} 
+#col-subcol-subcol #main {
+	width: 460px;
+}
+
+/* 1 column layout: no nav | main | sidebar */
+
+#col-float2 #wrapper-3,
+#col-float2 #main,
+#col-float3 #wrapper-3,
+#col-float3 #main {
+	max-width:1170px;
+}
+
+/* 2 column layout: | main (floating teasers) | subcol */
+#col-float2-subcol #wrapper-3,
+#col-float2-subcol #main {
+	width: 700px;
+}
+/* 2 column layout: | main (floating teasers) | subcol */
+#nav-col-float2 #wrapper-3,
+#nav-col-float2 #main {
+	width: 700px;
+}
+
+/* 2 col Project Page layout */
+#wrapper-3 #main {
+/*max-width:813px; temp remove - liquid */	
+}

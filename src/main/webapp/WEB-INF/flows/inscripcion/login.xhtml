@@ -1,0 +1,42 @@
+<!-- <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:h="http://java.sun.com/jsf/html"
+    xmlns:f="http://java.sun.com/jsf/core"
+    xmlns:ui="http://java.sun.com/jsf/facelets"
+    xmlns:a4j="http://richfaces.org/a4j"
+    xmlns:rich="http://richfaces.org/rich">
+    
+    <h:form>
+
+        <rich:panel>
+            <f:facet name="header">
+                <h:panelGroup>
+                <center>
+                    <h:outputText value="ACCESO AL SISTEMA DE INSCRIPCION DE VEHICULOS DE MERCANCIAS" />
+                    </center>
+                </h:panelGroup>
+            </f:facet>
+            <h:panelGrid columns="2"> 
+                <h:outputText value="Name: " />
+                <h:inputText value="#{userBean.name}" id="name">
+                    <f:validateLength minimum="3" maximum="8"/>
+                    <f:validateRequired />
+                    <rich:validator />
+                </h:inputText>
+                <h:outputText value="Contraseña: " />
+                <h:inputText value="#{userBean.pass}" id="pass" validatorMessage="Error">
+                    <f:validateRegex pattern="^(([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5}){1,25})+([;.](([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5}){1,25})+)*$" ></f:validateRegex>
+                    <rich:validator />
+                </h:inputText>
+            </h:panelGrid>
+            <a4j:status>
+               <f:facet name="start">
+               <h:graphicImage value="/images/ai.gif" alt="ai" />
+               </f:facet>
+            </a4j:status>
+            <a4j:commandButton value="Submit" type="button"
+                action="#{userBean.store}" render="out" execute="@form" />
+            <h:outputText value="#{userBean.recordStatus}" id="out" />
+        </rich:panel>
+    </h:form>
+</ui:composition> -->

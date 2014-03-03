@@ -1,0 +1,36 @@
+<!DOCTYPE composition PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<ui:composition template="/WEB-INF/flows/template/standart.xhtml"
+	xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets">
+
+	<ui:define name="banner">
+	<h1 class="heading">#{msgs.bannerlogin}</h1>
+		<div class="navbar">
+			<div class="navbar-inner">
+				<ul class="nav pull-right">
+				</ul>
+			</div>
+		</div>
+
+	</ui:define>
+	<ui:define name="content">
+		<div class="hero-unit">
+			<h1 class="heading">Logged out</h1>
+			<p>You have logged out of the application</p>
+			<div class="btns">
+				<a href="#{request.contextPath}/spring/index"
+					class="btn btn-primary btn-large">Login Again</a>
+			</div>
+		</div>
+	</ui:define>
+	<ui:define name="sidebarLeft">
+		  <h:graphicImage library="img" name="/bandera.jpg" />
+		<!-- <ul class="nav nav-list">
+			<li><a href="#" class="a-1 a-2"> <i
+					class="icon icon-chevron-right pull-right"></i>
+			</a></li>
+
+		</ul> -->
+	</ui:define>
+</ui:composition>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<flow xmlns="http://www.springframework.org/schema/webflow"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.springframework.org/schema/webflow
+                          http://www.springframework.org/schema/webflow/spring-webflow-2.0.xsd"
+      start-state="start">
+
+<view-state id="start" view="inscripcion.xhtml">
+        <!-- <on-entry>
+            <evaluate expression="contactController.newContactListBean()" result="viewScope.contactListBean"/>
+        </on-entry> -->
+        <transition on="view" to="show">
+            <!-- <set name="requestScope.contactId" value="contactListBean.selectedContact.id"/> -->
+        </transition>
+        <transition on="add" to="add-step-1">
+            <!-- <evaluate expression="contactController.newContactBean()" result="flowScope.contactBean"/> -->
+        </transition>
+    </view-state>
+
+<!-- 	<view-state id="login">
+		<transition on="acceso" to="formulario" />
+		<transition on="cancelar" to="negadoacceso" />
+		</view-state>
+	<view-state id="formulario">
+		<transition on="next" to="inscripcion" />
+	</view-state>
+	<view-state id="negadoacceso" />
+ -->
+ </flow>
