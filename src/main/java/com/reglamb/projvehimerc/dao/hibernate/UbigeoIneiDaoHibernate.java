@@ -49,7 +49,7 @@ public class UbigeoIneiDaoHibernate extends HibernateDaoSupport implements Ubige
 	@SuppressWarnings("unchecked")
 	@Override
 	public List<Ubigeo_Inei> getAllUbigeoInei(Ubigeo_Inei ubigeo) {
-		return (List<Ubigeo_Inei>) getHibernateTemplate().find("from "
+		return getHibernateTemplate().find("from "
                 + Ubigeo_Inei.class.getName());
 	}
 

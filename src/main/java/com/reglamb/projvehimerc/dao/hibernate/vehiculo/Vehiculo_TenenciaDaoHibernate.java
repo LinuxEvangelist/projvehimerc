@@ -49,7 +49,7 @@ public class Vehiculo_TenenciaDaoHibernate extends HibernateDaoSupport implement
 	@Override
 	public List<Vehiculo_Tenencia> getAllVehiculoTenencia(
 			Vehiculo_Tenencia vehiculotenencia) {
-		return (List<Vehiculo_Tenencia>) getHibernateTemplate().find("from "
+		return getHibernateTemplate().find("from "
                 + Vehiculo_Tenencia.class.getName());
 	}
 

@@ -51,7 +51,7 @@ public class TransportistaJuridDaoHibernate extends HibernateDaoSupport implemen
 	@Override
 	public List<TransportistaJuridico> getAllTransportistaJuridDao(
 			TransportistaJuridico transportistajurid) {
-		return (List<TransportistaJuridico>) getHibernateTemplate().find("from "
+		return getHibernateTemplate().find("from "
                 + TransportistaJuridico.class.getName());
 	}
 

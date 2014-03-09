@@ -52,7 +52,7 @@ public class Transportista_RepresentanteDaoHibernate extends HibernateDaoSupport
 	@Override
 	public List<Transportista_Representante> getAllTransportistaRepresentate(
 			Transportista_Representante transportistarepre) {
-		return (List<Transportista_Representante>) getHibernateTemplate().find("from "
+		return getHibernateTemplate().find("from "
                 + Transportista_Representante.class.getName());
 	}
 

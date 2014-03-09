@@ -52,7 +52,7 @@ public class HabilitacionVehicular_IncremtSustiDaoHibernate extends HibernateDao
 	@Override
 	public List<HabilitacionVehicular_IncremtSusti> getAllHabilitacionVehicularIncremtSusti(
 			HabilitacionVehicular_IncremtSusti habilitacionincremtsusti) {
-		return (List<HabilitacionVehicular_IncremtSusti>) getHibernateTemplate().find("from "
+		return getHibernateTemplate().find("from "
                 + HabilitacionVehicular_IncremtSusti.class.getName());
 	}
 

@@ -2,7 +2,7 @@ package com.reglamb.projvehimerc.common;
 
 import org.springframework.context.annotation.Scope;
 import org.springframework.dao.DataAccessException;
-import org.springframework.security.core.context.SecurityContextHolder;
+//import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Component;
 
 import com.reglamb.projvehimerc.dao.UsersDao;
@@ -43,7 +43,5 @@ public class UsersBean {
 	public Users  showvUser(String access) throws DataAccessException, EntityNotFoundException{
 		return userDao.getUser(access);
 	}
-//	public Users getCurrentUser() {
-//	    return (Users) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
-//	}
+
 }

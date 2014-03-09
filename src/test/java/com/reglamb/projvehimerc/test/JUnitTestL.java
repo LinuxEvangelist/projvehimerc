@@ -5,7 +5,6 @@ import java.text.ParseException;
 //import java.text.SimpleDateFormat;
 //import java.util.Date;
 
-import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,7 +16,6 @@ import org.springframework.transaction.annotation.Transactional;
 
 import com.reglamb.projvehimerc.dao.Vehiculo_SoatDao;
 import com.reglamb.projvehimerc.domain.security.Users;
-import com.reglamb.projvehimerc.domain.vehiculo.Vehiculo_Soat;
 import com.reglamb.projvehimerc.exception.EntityNotFoundException;
 import com.reglamb.projvehimerc.service.HabilitacionVehicular_InscripcionFacade;
 

@@ -50,7 +50,7 @@ public class Transportista_SucursalDaoHibernate extends HibernateDaoSupport impl
 	@Override
 	public List<Transportista_Sucursal> getAllTransportistaSucursal(
 			Transportista_Sucursal transportistasucu) {
-		return (List<Transportista_Sucursal>) getHibernateTemplate().find("from "
+		return getHibernateTemplate().find("from "
                 + Transportista_Sucursal.class.getName());
 	}
 

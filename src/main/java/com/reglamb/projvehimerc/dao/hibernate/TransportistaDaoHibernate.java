@@ -16,9 +16,10 @@ public class TransportistaDaoHibernate extends HibernateDaoSupport implements Tr
 		return null;
 	}
 
+	@Override
 	@SuppressWarnings("unchecked")
 	public List<Transportista> getAll() {
-		return (List<Transportista>) getHibernateTemplate().find("from "
+		return getHibernateTemplate().find("from "
                 + Transportista.class.getName());
 	}
 
@@ -46,9 +47,10 @@ public class TransportistaDaoHibernate extends HibernateDaoSupport implements Tr
 		
 	}
 
+	@Override
 	@SuppressWarnings("unchecked")
 	public List<Transportista> getAllTransportista(Transportista transportista) {
-		return (List<Transportista>) getHibernateTemplate().find("from "
+		return getHibernateTemplate().find("from "
                 + Transportista.class.getName());
 	}
 

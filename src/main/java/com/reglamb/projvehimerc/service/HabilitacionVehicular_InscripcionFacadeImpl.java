@@ -78,12 +78,14 @@ public class HabilitacionVehicular_InscripcionFacadeImpl implements Habilitacion
 	
 	
 	/*Habilitacion Vehicular Inscripcion*/
+	@Override
 	@Transactional(readOnly = false,isolation=Isolation.DEFAULT)
 	public void saveHabilitacionVehicularInscrip(
 			HabilitacionVehicular_Inscripcion habilitacioninscrip) {
 		habilitacionVehicular_InscripcionDao.saveHabilitacionVehicularInscrip(habilitacioninscrip);
 	}
 
+	@Override
 	@Transactional(readOnly = true)
 	public List<HabilitacionVehicular_Inscripcion> getAllHabilitacionVehicularInscrip(
 			HabilitacionVehicular_Inscripcion habilitacioninscrip) {
@@ -104,6 +106,7 @@ public class HabilitacionVehicular_InscripcionFacadeImpl implements Habilitacion
 	}
 
 	/*Transportista Juridico*/
+	@Override
 	@Transactional(readOnly = false,isolation=Isolation.DEFAULT)
 	public void saveTransportistaJuridDao(
 			TransportistaJuridico transportistajurid)
@@ -111,6 +114,7 @@ public class HabilitacionVehicular_InscripcionFacadeImpl implements Habilitacion
 		transportistaJuridicoDao.saveTransportistaJuridDao(transportistajurid);
 	}
 
+	@Override
 	@Transactional(readOnly = true)
 	public List<TransportistaJuridico> getAllTransportistaJuridDao(
 			TransportistaJuridico transportistajurid)
@@ -119,11 +123,13 @@ public class HabilitacionVehicular_InscripcionFacadeImpl implements Habilitacion
 	}
 	
 	/*Transportista Natural*/
+	@Override
 	@Transactional(readOnly = false,isolation=Isolation.DEFAULT)
 	public void saveTransportistaNatuDao(TransportistaNatural transportistanatu) {
 		transportistaNaturalDao.saveTransportistaNatuDao(transportistanatu);
 	}
 	
+	@Override
 	@Transactional(readOnly = true)
 	public List<TransportistaNatural> getAllTransportistaNatuDao(
 			TransportistaNatural transportistanatu) throws DataAccessException {
@@ -131,6 +137,7 @@ public class HabilitacionVehicular_InscripcionFacadeImpl implements Habilitacion
 	}
 	
 	/*Transportista Sucursal*/
+	@Override
 	@Transactional(readOnly = false,isolation=Isolation.DEFAULT)
 	public void saveTransportistaSucursal(
 			Transportista_Sucursal transportistasucu)
@@ -138,6 +145,7 @@ public class HabilitacionVehicular_InscripcionFacadeImpl implements Habilitacion
 		transportistaSucursalDao.saveTransportistaSucursal(transportistasucu);
 	}
 	
+	@Override
 	@Transactional(readOnly = true)
 	public List<Transportista_Sucursal> getAllTransportistaSucursal(
 			Transportista_Sucursal transportistasucu)
@@ -146,6 +154,7 @@ public class HabilitacionVehicular_InscripcionFacadeImpl implements Habilitacion
 	}
 	
 	/*Transportista Representante*/
+	@Override
 	@Transactional(readOnly = false,isolation=Isolation.DEFAULT)
 	public void saveTransportistaRepresentate(
 			Transportista_Representante transportistarepre)
@@ -153,6 +162,7 @@ public class HabilitacionVehicular_InscripcionFacadeImpl implements Habilitacion
 		transportistaRepresentanteDao.saveTransportistaRepresentate(transportistarepre);		
 	}
 
+	@Override
 	@Transactional(readOnly = true)
 	public List<Transportista_Representante> getAllTransportistaRepresentate(
 			Transportista_Representante transportistarepre)
@@ -161,6 +171,7 @@ public class HabilitacionVehicular_InscripcionFacadeImpl implements Habilitacion
 	}
 	
 	/*Transportista Accionista*/
+	@Override
 	@Transactional(readOnly = false,isolation=Isolation.DEFAULT)
 	public void saveTransportistaAccionista(
 			Transportista_Accionista transportistasaccio)
@@ -168,6 +179,7 @@ public class HabilitacionVehicular_InscripcionFacadeImpl implements Habilitacion
 		transportistaAccionistaDao.saveTransportistaAccionista(transportistasaccio);
 	}
 	
+	@Override
 	@Transactional(readOnly = true)
 	public List<Transportista_Accionista> getAllTransportistaAccionista(
 			Transportista_Accionista transportistasaccio)
@@ -177,11 +189,13 @@ public class HabilitacionVehicular_InscripcionFacadeImpl implements Habilitacion
 	
 		
 	/*Vehiculo*/
+	@Override
 	@Transactional(readOnly = false,isolation=Isolation.DEFAULT)
 	public void saveVehiculo(Vehiculo vehiculo) throws DataAccessException {
 		vehiculoDao.saveVehiculo(vehiculo);
 	}
 
+	@Override
 	@Transactional(readOnly = true)
 	public List<Vehiculo> getAllVehiculo(Vehiculo vehiculo)
 			throws DataAccessException {
@@ -189,12 +203,14 @@ public class HabilitacionVehicular_InscripcionFacadeImpl implements Habilitacion
 	}
 	
 	/*Vehiculo Citv*/
+	@Override
 	@Transactional(readOnly = false,isolation=Isolation.DEFAULT)
 	public void saveVehiculoCitv(Vehiculo_Citv vehiculocitv)
 			throws DataAccessException {
 		vehiculoCitvDao.saveVehiculoCitv(vehiculocitv);
 	}
 
+	@Override
 	@Transactional(readOnly = true)
 	public List<Vehiculo_Citv> getAllVehiculoCitv(Vehiculo_Citv vehiculocitv)
 			throws DataAccessException {
@@ -202,11 +218,13 @@ public class HabilitacionVehicular_InscripcionFacadeImpl implements Habilitacion
 	}
 	
 	/*Vehiculo Soat*/
+	@Override
 	@Transactional(readOnly = false,isolation=Isolation.DEFAULT)
 	public void saveVehiculoSoat(Vehiculo_Soat vehiculosoat)
 			throws DataAccessException {
 		vehiculoSoatDao.saveVehiculoSoat(vehiculosoat);	
 	}
+	@Override
 	@Transactional(readOnly = true)
 	public List<Vehiculo_Soat> getAllVehiculoSoat(Vehiculo_Soat vehiculosoat)
 			throws DataAccessException {
@@ -214,12 +232,14 @@ public class HabilitacionVehicular_InscripcionFacadeImpl implements Habilitacion
 	}
 
 	/*Vehiculo Tenencia*/
+	@Override
 	@Transactional(readOnly = false,isolation=Isolation.DEFAULT)
 	public void saveVehiculoTenencia(Vehiculo_Tenencia vehiculotenencia)
 			throws DataAccessException {
 		vehiculoTenenciaDao.saveVehiculoTenencia(vehiculotenencia);
 	}
 
+	@Override
 	@Transactional(readOnly = true)
 	public List<Vehiculo_Tenencia> getAllVehiculoTenencia(
 			Vehiculo_Tenencia vehiculotenencia) throws DataAccessException {
@@ -227,11 +247,13 @@ public class HabilitacionVehicular_InscripcionFacadeImpl implements Habilitacion
 	}
 	
 	/*Conductor*/
+	@Override
 	@Transactional(readOnly = false,isolation=Isolation.DEFAULT)
 	public void saveConductor(Conductor conductor) throws DataAccessException {
 		conductorDao.saveConductor(conductor);
 	}
 
+	@Override
 	@Transactional(readOnly = true)
 	public List<Conductor> getAllConductor(Conductor conductor)
 			throws DataAccessException {

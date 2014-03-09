@@ -51,7 +51,7 @@ public class Transportista_AccionistaDaoHibernate extends HibernateDaoSupport im
 	@Override
 	public List<Transportista_Accionista> getAllTransportistaAccionista(
 			Transportista_Accionista transportistasaccio) {
-		return (List<Transportista_Accionista>) getHibernateTemplate().find("from "
+		return getHibernateTemplate().find("from "
                 + Transportista_Accionista.class.getName());
 	}
 

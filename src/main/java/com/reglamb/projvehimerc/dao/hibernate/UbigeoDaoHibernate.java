@@ -49,7 +49,7 @@ public class UbigeoDaoHibernate extends HibernateDaoSupport implements UbigeoDao
 	@SuppressWarnings("unchecked")
 	@Override
 	public List<Ubigeo_Transportista> getAllUbigeo(Ubigeo_Transportista ubigeo) {
-		return (List<Ubigeo_Transportista>) getHibernateTemplate().find("from "
+		return getHibernateTemplate().find("from "
                 + Ubigeo_Transportista.class.getName());
 	}
 

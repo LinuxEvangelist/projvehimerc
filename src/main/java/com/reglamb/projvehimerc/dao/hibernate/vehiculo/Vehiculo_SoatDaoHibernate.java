@@ -49,7 +49,7 @@ public class Vehiculo_SoatDaoHibernate extends HibernateDaoSupport implements Ve
 	@SuppressWarnings("unchecked")
 	@Override
 	public List<Vehiculo_Soat> getAllVehiculoSoat(Vehiculo_Soat vehiculosoat) {
-		return (List<Vehiculo_Soat>) getHibernateTemplate().find("from "
+		return getHibernateTemplate().find("from "
                 + Vehiculo_Soat.class.getName());
 	}
 

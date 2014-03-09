@@ -50,7 +50,7 @@ public class HabilitacionVehicular_InscripcionDaoHibernate extends HibernateDaoS
 	@Override
 	public List<HabilitacionVehicular_Inscripcion> getAllHabilitacionVehicularInscrip(
 			HabilitacionVehicular_Inscripcion habilitacioninscrip) {
-		return (List<HabilitacionVehicular_Inscripcion>) getHibernateTemplate().find("from "
+		return getHibernateTemplate().find("from "
                 + HabilitacionVehicular_Inscripcion.class.getName());
 	}
 

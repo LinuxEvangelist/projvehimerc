@@ -46,10 +46,11 @@ public class TransportistaNatuDaoHibernate extends HibernateDaoSupport implement
 		
 	}
 
+	@Override
 	@SuppressWarnings("unchecked")
 	public List<TransportistaNatural> getAllTransportistaNatuDao(
 			TransportistaNatural transportistanatu) {
-		return (List<TransportistaNatural>) getHibernateTemplate().find("from "
+		return getHibernateTemplate().find("from "
                 + TransportistaNatural.class.getName());
 	}
 

@@ -50,7 +50,7 @@ public class ProvinciaDaoHibernate extends HibernateDaoSupport implements Provin
 	@SuppressWarnings("unchecked")
 	@Override
 	public List<Provincia> getAllProvincia(Provincia provincia) {
-		return (List<Provincia>) getHibernateTemplate().find("from "
+		return getHibernateTemplate().find("from "
                 + Provincia.class.getName());
 	}
 

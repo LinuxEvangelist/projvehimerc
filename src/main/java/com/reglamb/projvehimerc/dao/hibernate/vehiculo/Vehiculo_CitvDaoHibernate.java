@@ -49,7 +49,7 @@ public class Vehiculo_CitvDaoHibernate extends HibernateDaoSupport implements Ve
 	@SuppressWarnings("unchecked")
 	@Override
 	public List<Vehiculo_Citv> getAllVehiculoCitv(Vehiculo_Citv vehiculocitv) {
-		return (List<Vehiculo_Citv>) getHibernateTemplate().find("from "
+		return getHibernateTemplate().find("from "
                 + Vehiculo_Citv.class.getName());
 	}
 	

@@ -50,7 +50,7 @@ public class DepartamentoDaoHibernate extends HibernateDaoSupport implements Dep
 	@SuppressWarnings("unchecked")
 	@Override
 	public List<Departamento> getAllDepartamento(Departamento departamento) {
-		return (List<Departamento>) getHibernateTemplate().find("from "
+		return getHibernateTemplate().find("from "
                 + Departamento.class.getName());
 	}
 

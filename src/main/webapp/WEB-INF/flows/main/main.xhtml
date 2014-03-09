@@ -10,54 +10,14 @@
 	<ui:define name="content">
 		<div class="page-header">
 			<h1>
-				Feature Number Two <small>It's awesome</small>
+				Feature Number Two <small>It's awesome</small><small>nn</small>
 			</h1>
 		</div>
 		<p class="p-1">Lorem ipsum dolor sit amet, consectetur adipiscing
 			elit. Aliquam convallis quam at justo condimentum condimentum. Fusce
 			arcu felis, fringilla nec varius a, rhoncus a libero. Donec ut ligula
 			vitae leo pellentesque varius.</p>
-
-		<ui:remove>
-		<h:dataTable value="#{usersBean.showvUser(usersBean.name_user)}" var="c"
-			styleClass="order-table" headerClass="order-table-header"
-			rowClasses="order-table-odd-row,order-table-even-row">
-
-			<h:column>
-				<f:facet name="header">
-    				Customer ID
-    			</f:facet>
-    				#{c.login}
-    		</h:column>
-
-			<h:column>
-				<f:facet name="header">
-    				Name
-				</f:facet>
-    				#{usersBean.getName_user()}
-    		</h:column>
-		</h:dataTable>
-</ui:remove>
-<!-- <h:dataTable value="#{usersBean.getCurrentUser()}" var="c" -->
-<!-- <h:dataTable value="" var="c"
-			styleClass="order-table" headerClass="order-table-header"
-			rowClasses="order-table-odd-row,order-table-even-row">
-
-			<h:column>
-				<f:facet name="header">
-    				Customer ID
-    			</f:facet>
-    				#{c.login}
-    		</h:column>
-
-			<h:column>
-				<f:facet name="header">
-    				Name
-				</f:facet>
-    				#{usersBean.getName_user()}
-    		</h:column>
-		</h:dataTable>
- -->
+		
 		<a4j:outputPanel ajaxRendered="true">
 			<rich:panel rendered="#{not empty panelMenuBean.current}">
 				<h:outputText value="#{panelMenuBean.current} selected" id="current" />

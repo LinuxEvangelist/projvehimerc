@@ -54,6 +54,7 @@ public class UsersDaoHibernate implements UsersDao{
 		
 	}
 
+	@Override
 	@SuppressWarnings("unchecked")
 	public Users getUser(String login) {
 		List<Users> userList = new ArrayList<Users>();  

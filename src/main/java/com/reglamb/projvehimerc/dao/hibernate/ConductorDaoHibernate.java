@@ -48,7 +48,7 @@ public class ConductorDaoHibernate extends HibernateDaoSupport implements Conduc
 	@SuppressWarnings("unchecked")
 	@Override
 	public List<Conductor> getAllConductor(Conductor conductor) {
-		return (List<Conductor>) getHibernateTemplate().find("from "
+		return getHibernateTemplate().find("from "
         + Conductor.class.getName());
 	}
 

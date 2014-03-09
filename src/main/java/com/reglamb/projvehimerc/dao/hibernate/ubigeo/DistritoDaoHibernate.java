@@ -50,7 +50,7 @@ public class DistritoDaoHibernate extends HibernateDaoSupport implements Distrit
 	@SuppressWarnings("unchecked")
 	@Override
 	public List<Distrito> getAllDistrito(Distrito distrito) {
-		return (List<Distrito>) getHibernateTemplate().find("from "
+		return getHibernateTemplate().find("from "
                 + Distrito.class.getName());
 	}
 
