@@ -11,123 +11,60 @@
 		<h:outputScript library="js" name="jquery.min.js" />
 		<!-- <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script> -->
 		<h:outputScript library="js" name="bootstrap.js" />
-		<h:outputScript library="js" name="dropstat.js"/>
+		<h:outputScript library="js" name="dropstat.js" />
 	</h:head>
-	
-	<!--  <head><title>IGNORED</title></head>-->
-	<!-- <ul class="nav">
-		<li><a href="#">Inicio</a></li>
-		<li class="dropdown">
-            <a class="dropdown-toggle" role="menu" href="#" data-toggle="dropdown">Sign In <strong class="caret"></strong></a>
-            <div class="dropdown-menu" style="padding: 15px; padding-bottom: 0px;">
-              Login form here
-            </div>
-          </li>
-		
-	</ul> -->
 
 	<h1 class="heading">#{msgs.bannerlogin}</h1>
 
-	<!-- <div class="navbar">
+
+	<div class="navbar">
 		<div class="navbar-inner">
-		<div class="container">
-			<ul class="nav pull-right">
-				<li class="dropdown"><a id="request" class="dropdown-toggle" href="#"
-					data-toggle="dropdown">#{request.userPrincipal.name} <strong
-						class="caret"></strong></a>
-					<div class="dropdown-menu"
-						style="padding: 50px; padding-bottom: 0px;">
-						Login form here
+			<div class="container">
+				<a class="btn btn-navbar" data-toggle="collapse"
+					data-target=".nav-collapse"> <span class="icon-bar"></span> <span
+					class="icon-bar"></span> <span class="icon-bar"></span>
+				</a>
+				<!-- <a class="brand" href="#">Project Name</a> -->
+				<div class="nav-collapse">
+					<ul class="nav pull-right">
+						<!-- <li class="active"><a href="#"><i class="icon-user icon-white"></i> Home</a></li> -->
+						<li class="dropdown"><a href="#" class="dropdown-toggle"
+							data-toggle="dropdown"><i class="icon-user icon-black" />
+								#{request.userPrincipal.name} <b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<!-- <li><a href="#">Action</a></li>
+              <li><a href="#">Another action</a></li> -->
 
-						<div id="h-dropdown">ddddddddddddddddhhhhhhhhkhkhhhhhddd</div>
-						<h:dataTable value="#{UsersBean.getUser(admin)}" var="c"
-							styleClass="order-table" headerClass="order-table-header"
-							rowClasses="order-table-odd-row,order-table-even-row">
+								<div id="drpdv">
+									<div id="drpiw">
+										<a class="gbmpiaa gbp1" onclick="gbar.logger.il(10,{t:146})"
+											href="https://plus.google.com/u/0/me?tab=wX"> <span
+											id="gbmpid" style="display: none"></span><img id="gbmpi"
+											width="94" height="94"
+											onerror="window.gbar&amp;&amp;gbar.ppe?gbar.ppe():this.loadError=1;"
+											src="//lh3.googleusercontent.com/-JbsS22Z17nE/AAAAAAAAAAI/AAAAAAAAAAA/BTcv0q7HQn4/s96-c/photo.jpg"
+											alt="Ricardo Llontop"></img></a>
 
-							<h:column>
-								<f:facet name="header">
-    				Customer ID
-    			</f:facet>
-    				#{c.login}
-    		</h:column>
-						</h:dataTable>
-						<div class="d-dropdown">
-							<table>
-								<tbody>
-									<tr>
-										<td class="btn-admin"><a
-											href="${request.contextPath}/spring/logout">#{msgs.addaccounts}</a></td>
-										<td class="btn-logout"><a
-											href="${request.contextPath}/spring/logout">#{msgs.logout}</a></td>
-									</tr>
-								</tbody>
-							</table>
+									</div>
+									<div id="drpdt"></div>
+								</div>
+								<li class="divider"></li>
+								<table id="tbl-admin">
+									<tbody>
+										<tr>
+											<td class="btn-admin"><a role="button"
+												href="${request.contextPath}/spring/logout" class="abadm">#{msgs.addaccounts}</a>
 
-
-						</div>
-					</div></li>
-
-			</ul>
+											</td>
+											<td class="btn-logout"><a role="button"
+												href="${request.contextPath}/spring/logout" class="ablog">#{msgs.logout}</a></td>
+										</tr>
+									</tbody>
+								</table>
+							</ul></li>
+					</ul>
+				</div>
 			</div>
 		</div>
-	</div> -->
-<div class="navbar">
-  <div class="navbar-inner">
-    <div class="container">
-      <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </a>
-      <!-- <a class="brand" href="#">Project Name</a> -->
-      <div class="nav-collapse">
-        <ul class="nav pull-right">
-          <!-- <li class="active"><a href="#"><i class="icon-user icon-white"></i> Home</a></li> -->
-          <li class="dropdown" >
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-user icon-black"/>  #{request.userPrincipal.name} <b class="caret"></b></a>
-            <ul class="dropdown-menu">
-              <!-- <li><a href="#">Action</a></li>
-              <li><a href="#">Another action</a></li> -->
-              
-              <div id="drpdv">
-              <div id="drpiw">
-              <a class="gbmpiaa gbp1" onclick="gbar.logger.il(10,{t:146})" href="https://plus.google.com/u/0/me?tab=wX">
-              <span id="gbmpid" style="display:none"></span><img id="gbmpi" width="94" height="94" onerror="window.gbar&amp;&amp;gbar.ppe?gbar.ppe():this.loadError=1;" src="//lh3.googleusercontent.com/-JbsS22Z17nE/AAAAAAAAAAI/AAAAAAAAAAA/BTcv0q7HQn4/s96-c/photo.jpg" alt="Ricardo Llontop"></img></a>
-             
-              </div>
-              <div id ="drpdt">
-              
-              </div>
-              </div>
-              
-              
-              
-              
-              
-              
-              
-              
-                  <li class="divider"></li>
-              <table id="tbl-admin">
-								<tbody>
-									<tr>
-										<td class="btn-admin">
-										<a role="button" href="${request.contextPath}/spring/logout" class="abadm">#{msgs.addaccounts}</a>
-										
-										</td>
-										<td class="btn-logout"><a role="button"
-											href="${request.contextPath}/spring/logout" class="ablog">#{msgs.logout}</a></td>
-									</tr>
-								</tbody>
-							</table>
-            </ul>
-          </li>
-        </ul>
-        <!-- <form class="navbar-search pull-right" action="">
-          <input type="text" class="search-query span2" placeholder="Search"/>
-        </form> -->
-      </div><!-- /.nav-collapse -->
-    </div><!-- /.container -->
-  </div><!-- /.navbar-inner -->
-</div><!-- /.navbar -->
+	</div>
 </ui:composition>
