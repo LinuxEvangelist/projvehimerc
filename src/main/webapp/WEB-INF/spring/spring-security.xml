@@ -16,21 +16,13 @@
 		
 		<form-login login-page="/spring/index" login-processing-url="/spring/loginProcess" 
 		default-target-url="/spring/main" authentication-failure-url="/spring/index?login_error=1"/>
-		<!-- <form-login login-page="/index" authentication-failure-url="/security/loginfail" 
-			default-target-url="/index" /> -->
 		<logout logout-url="/spring/logout" logout-success-url="/spring/logoutSuccess" />
 	</http>
 
 	<authentication-manager alias="authenticationManager">
 		<authentication-provider user-service-ref="customUserDetailsService">
-			<!-- <password-encoder hash="plaintext"> -->
 			<password-encoder ref="passwordEncoder" />
 		</authentication-provider>
-		<!-- <authentication-provider> <jdbc-user-service data-source-ref="vehicDataSource" 
-			group-authorities-by-username-query="select g.id, g.group_name, ga.authority 
-			from groups g, group_members gm, group_authorities ga where gm.username = 
-			? and g.id = ga.group_id and g.id = gm.group_id" /> <password-encoder ref="passwordEncoder"/> 
-			</authentication-provider> -->
 	</authentication-manager>
 
 	<beans:bean id="passwordEncoder" xmlns="http://www.springframework.org/schema/beans"

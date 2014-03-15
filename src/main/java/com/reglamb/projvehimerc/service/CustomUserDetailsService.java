@@ -9,13 +9,13 @@ import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.User;
-
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.reglamb.projvehimerc.dao.UsersDao;
+import com.reglamb.projvehimerc.domain.security.SecurityUser;
 import com.reglamb.projvehimerc.domain.security.Users;
 
 @Service
@@ -24,6 +24,13 @@ public class CustomUserDetailsService implements UserDetailsService{
 	
 	@Autowired
 	UsersDao usersDao;
+//	private Map<String, Users> users = new HashMap<String, Users>();
+	
+//	public  CustomUserDetailsService(Collection<Users> users) {
+//	for (Users user : users) {
+//	this.users.put(user.getName_user().toLowerCase(), user);
+//	}
+//	}
 
 	@Override
 	public UserDetails loadUserByUsername(String login)
@@ -33,15 +40,16 @@ public class CustomUserDetailsService implements UserDetailsService{
         boolean accountNonExpired = true;  
         boolean credentialsNonExpired = true;  
         boolean accountNonLocked = true;  
+        
   
-        return new User(  
+        return new SecurityUser(  
                 domainUser.getLogin(),   
                 domainUser.getPassword(),  
                 domainUser.getEnabled(),   
                 accountNonExpired,   
                 credentialsNonExpired,   
                 accountNonLocked,  
-                getAuthorities(domainUser.getauthorities().getId())  );  
+                getAuthorities(domainUser.getauthorities().getId()),domainUser.getName_user());  
         }
 
 	private Collection<? extends GrantedAuthority> getAuthorities(Integer id) {

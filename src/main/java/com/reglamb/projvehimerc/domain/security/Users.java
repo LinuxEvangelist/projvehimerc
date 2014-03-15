@@ -1,6 +1,7 @@
 package com.reglamb.projvehimerc.domain.security;
 
 import java.io.Serializable;
+import java.util.Collection;
 
 import javax.persistence.CascadeType;
 import javax.persistence.Entity;
@@ -12,7 +13,6 @@ import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 import javax.persistence.JoinTable;
 import javax.persistence.OneToOne;
-
 
 import com.reglamb.projvehimerc.domain.DomainObject;
 
@@ -27,7 +27,6 @@ import com.reglamb.projvehimerc.domain.DomainObject;
 	    allocationSize=20)
 @Table(name="users")  
 public class Users implements Serializable,DomainObject{  
-	
 	private static final long serialVersionUID = 1L;
 
 	@Id @GeneratedValue(strategy=GenerationType.SEQUENCE, generator="SEQ_STORE")  
@@ -36,7 +35,7 @@ public class Users implements Serializable,DomainObject{
     private String name_user;
     private String password;
     private Boolean enabled;
-      
+    
     @OneToOne(cascade=CascadeType.ALL)  
     @JoinTable(name="users_authorities",  
         joinColumns = {@JoinColumn(name="user_id", referencedColumnName="id")},  
@@ -90,6 +89,5 @@ public class Users implements Serializable,DomainObject{
   
     public void setAuthorities(Authorities authorities) {  
         this.authorities = authorities;  
-    }     
-  
+    }
 }  
